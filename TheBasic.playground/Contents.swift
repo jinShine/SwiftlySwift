@@ -167,8 +167,6 @@ func testFunc2(param: Int) {
 testFunc1(10)
 testFunc2(param: 20)
 
-
-
 func testFunc3() {
   print("ㅎㅇ")
 }
@@ -454,6 +452,308 @@ case .saturday: print("토요일")
 default: print("None")
 }
 
+
+
+
+
+print("\n-------------- [Collection] --------------\n")
+
+/*:
+ ### 스위프트에서 Collection은 Value Type
+  * Array - ordered collections of values.
+  * Set - unordered collections of unique values.
+  * Dictionary - unordered collections of key-value associations.
+
+ ### Mutability
+
+ * let => Immutable Collection
+ * var => Mutable Collection
+ */
+
+print("\n-------------- [Array] --------------\n")
+/*:
+ ### Array
+
+ * Ordered Collection
+ * Zero-based Integer Index
+ */
+
+/*:
+ 초기화 - 방법이 다양함
+ */
+let strArray1: Array<String> = ["apple", "orange", "melon"]
+let strArray2: [String] = ["apple", "orange", "melon"]
+let strArray3 = ["apple", "orange", "melon"]
+
+
+/*:
+ Mutability
+ */
+
+// Mutable
+var mutableArr: [Int] = [1, 2]
+mutableArr.append(3)
+
+// Immutable
+let immutablrArr: [Int] = [1, 2]
+//immutablrArr.append(3)
+
+
+/*:
+count
+*/
+var fruits = ["Apple", "Orange", "Banana"]
+let countOfFruits = fruits.count
+
+/*:
+isEmpty
+*/
+if !fruits.isEmpty {
+  print("\(countOfFruits) element(s)")
+} else {
+  print("empty array")
+}
+
+
+/*:
+ Retrieve an Element
+*/
+/*
+ * [Int]
+ * [Array.Index]
+ * [a...b]
+ * [a..<b]
+ */
+
+//           0        1         2
+fruits = ["Apple", "Orange", "Banana"]
+
+fruits[0] == fruits[fruits.startIndex]
+fruits[2] == fruits[fruits.endIndex - 1]
+
+
+/*:
+ Searching
+ */
+
+let alphabetArr = ["A", "B", "C", "D", "E"]
+
+//contains
+if alphabetArr.contains("A") {
+  print("true")
+} else {
+  print("false")
+}
+
+//contains(where: <#T##(String) throws -> Bool#>)
+alphabetArr.contains { alphabet -> Bool in
+  // code..
+  return alphabet == "A"
+}
+
+/*:
+ * first~ : 처음부터 순차 검색
+ * last~  : 마지막부터 순차 검색
+ */
+
+// value 찾기
+var foundStr1 = alphabetArr.first { alphabet -> Bool in
+  return true
+}
+
+var foundStr2 = alphabetArr.last { alphabet -> Bool in
+  return alphabet == "B"
+}
+
+// index 찾기
+alphabetArr.firstIndex(of: "B") // 1
+alphabetArr.lastIndex(of: "D") // 3
+
+
+
+/*:
+Add
+*/
+
+//append
+var arr3 = ["A", "B", "C"]
+arr3.append("D")
+print(arr3)
+
+// +
+arr3 += ["E"]
+print(arr3)
+
+// insert
+arr3.insert("Z", at: 2)
+arr3.insert("U", at: 5)
+print(arr3)
+
+
+var arr4 = ["F", "G", "H"]
+let mergeArr = arr3 + arr4
+print(mergeArr)
+
+
+/*:
+Change
+*/
+
+arr4[0] = "R"
+arr4[arr4.endIndex - 2] = "U"
+print(arr4)
+
+
+/*:
+Remove
+*/
+
+//arr4.removeAll()
+//arr4.removeFirst(<#T##k: Int##Int#>)
+//arr4.removeLast(<#T##k: Int##Int#>)
+arr4.removeLast()
+
+
+/*:
+Soring
+ * sorted vs sort
+*/
+
+var numArr1 = [5, 3, 7, 9, 2, 6, 1, 4, 8]
+
+// sort 리턴이 void
+numArr1.sort()
+print(numArr1)
+
+// sorted은 리턴값이 배열
+let sortedArr = numArr1.sorted()
+print(sortedArr)
+
+// > 오른차순
+// < 내림차순
+numArr1.sorted(by: >)
+numArr1.sorted(by: <)
+
+
+/*:
+ Enumerating an Array
+*/
+
+let array = ["Apple", "Orange", "Melon"]
+
+// reverse
+
+for value in array.reversed() {
+  if let index = array.firstIndex(of: value) {
+    print("\(index) - \(value)")
+  }
+}
+
+// enumerated
+
+for tuple in array.enumerated() {
+  print("#\(tuple.offset) - \(tuple.element)")
+}
+
+for (index, word) in array.enumerated() {
+  print("#\(index) - \(word)")
+}
+
+
+
+print("\n-------------- [Dictionary] --------------\n")
+
+/*:
+ ### Dictionary
+
+* Element = Unique Key + Value
+* Unordered Collection
+*/
+
+/*:
+초기화 - 방법이 다양함
+*/
+var dic1: Dictionary<String, String> = ["1" : "A", "2" : "B"]
+var dic2: [String : String] = ["1" : "A", "2" : "B"]
+var dic3 = ["1" : "A", "2" : "B"]
+
+
+/*:
+count
+*/
+var words = ["A": "Apple", "B": "Banana", "C": "City"]
+let countOfWords = words.count
+
+/*:
+isEmpty
+*/
+if !words.isEmpty {
+  print("\(countOfWords) element(s)")
+} else {
+  print("empty dictionary")
+}
+
+/*:
+ Retrieve an Element
+*/
+
+// 키로 접근
+words["A"]
+words["C"]
+
+// 전체 keys
+words.keys
+// 전체 values
+words.values
+
+if let aValue = words["A"] {
+  print(aValue)
+} else {
+  print("Not found")
+}
+
+/*:
+ Searching
+*/
+
+if words.contains(where: { (key, value) -> Bool in
+  return key == "A"
+  }){
+  print("contains A key.")
+}
+
+if words.contains(where: { (dict) -> Bool in
+  return dict.value.lowercased() == "City".lowercased()
+}) {
+  print("contains City value.")
+}
+
+let bWord1 = words.first { (key, value) -> Bool in
+  return key == "B"
+}
+
+
+/*:
+Change
+*/
+
+var persons = ["name" : "SeungJin", "age" : "29", "address" : "seoul"]
+persons["name"] = "Jinnify"
+print(persons)
+
+persons.updateValue("30", forKey: "age")
+print(persons)
+
+/*:
+Remove
+*/
+
+//persons.removeAll()
+persons.removeValue(forKey: "address")
+
+
+
+print("\n-------------- [Set] --------------\n")
 
 
 
