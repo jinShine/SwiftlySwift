@@ -757,4 +757,93 @@ print("\n-------------- [Set] --------------\n")
 
 
 
+print("\n-------------- [Optional] --------------\n")
 
+
+/*:
+ ## Optional
+
+ * Optional 은 값이 없을 수 있는(absent) 상황에 사용
+ * 옵셔널 타입은 2가지 가능성을 지님
+    * 값을 전혀 가지고 있지 않음
+    * 값이 있으며, 그 값에 접근하기 위해 옵셔널을 벗겨(unwrap)낼 수 있음
+
+ ![OptionalType](optional-type.png)
+ */
+
+
+// Type Declaration
+var optionalType1: String?
+var optionalType2: Optional<Int>
+type(of: optionalType1)
+
+
+
+
+
+
+
+
+
+
+
+print("\n-------------- [Class] --------------\n")
+/*:
+# Class
+![Class](class.png)
+*/
+
+/*
+ <에러 발생>
+   - 변수에 초기 값이 없음
+   - 프로퍼티들이 모두 값이 설정 해줘야한다. 한개라도 없으면 에러가 생김
+class SeungJin {
+  let name: String
+  let age : Int
+  let height: Double
+}
+ */
+
+// 1. 해결
+// 프로퍼티에 초기값을 지정
+class SeungJin1 {
+  let name: String = "김승진"
+  let age : Int = 30
+  let height: Double = 180.0
+}
+
+// 2. 해결
+// 생성자 생성
+class SeungJin2 {
+  let name: String
+  let age : Int
+  let height: Double
+
+  init(name: String, age: Int, height: Double) {
+    self.name = name
+    self.age = age
+    self.height = height
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//: [Next](@next)
