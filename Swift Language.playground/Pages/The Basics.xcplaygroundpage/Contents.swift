@@ -1000,10 +1000,132 @@ for shape in shapes {
   }
 }
 
+print("\n-------------- [Access Control] --------------\n")
+/*:
+---
+# Access Control
+ 
+ * Swift 에서는 5가지의 다른 접근 레벨 제공
+ * open (가장 개방적) > public > internal (기본 레벨) > fileprivate > private (가장 제한적)
+ * Open / Public 차이점
+    * Open은 다른 모듈에서 override를 할 수 있고, Public은 Override를 할 수없다.
+ 
+ ![access](access-control.png)
+---
+*/
+
+
+
+
+
 
 print("\n-------------- [Any, AnyObject] --------------\n")
 
+/*:
+---
+# Any , AnyObject
+ 
+ * Swift 는 Int, String 등의 Primitive타입 확정 이외 가변 타입도 함께 제공
+ * Any(모든 타입), AnyObject(모든 레퍼런스 타입)
+ * Any > AnyObject
+---
+*/
+
+
+class SomeClass1 {}
+class SomeClass2 {}
+
+var anyArray: [Any]
+var anyObjectArray: [AnyObject]
+
+anyArray = [110, "str", true, 9.9, SomeClass1()]
+anyObjectArray = [SomeClass1(), SomeClass2(), SomeClass1(), SomeClass2()]
+
+// 가변 타입이기때문에 사용할땐 타입 캐스팅이 필요함!
+var number1 = anyArray[0] as? Int
+var strText = anyArray[1] as? String
+
+
+
+print("\n---------- [ Closure ] ----------\n")
+
+/*:
+ **function** - named code block
+ **closure** - unnamed code block (lambdas)
+ */
+
+/*:
+### Basic closure
+*/
+
+//() -> ()
+let simpleClosure = {
+  print("This is SimpleClosure!!")
+}
+simpleClosure()
+
+//(Int, Int) -> String
+let addClosure = { (param1: Int, param2: Int) -> String in
+  return "\(param1 + param2)"
+}
+addClosure(10, 20)
+
+/*:
+### Syntax Optimization
+*/
+func performClosure(param: (String) -> Int) {
+  print(param("Swift"))
+}
+
+performClosure(param: { (str: String) -> Int in
+  return str.count
+})
+
+performClosure(param: { (str: String) in
+  return str.count
+})
+
+performClosure(param: { str in
+  return str.count
+})
+
+performClosure(param: {
+  return $0.count
+})
+
+performClosure(param: {
+  $0.count
+})
+
+performClosure(param: ) {
+  $0.count
+}
+
+performClosure() {
+  $0.count
+}
+
+performClosure { $0.count }
+
+
+
+/*:
+ ## Capture
+ * Value Type Capture
+ * Reference Type Capture
+*/
+
+
+
+
+
+
+
+/*:
+ ## Escaping
+*/
 
 
 
 //: [Next](@next)
+
