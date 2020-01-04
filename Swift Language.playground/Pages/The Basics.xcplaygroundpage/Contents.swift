@@ -817,6 +817,16 @@ print(optionalType2)
  ![guard](optional-binding-guard.png)
 */
 
+// !를 이용해서 강제 언래핑(강제로 값을 빼냄)을 이용할 수 있다.
+var optionalAddress: String? = "동대문구 답십리"
+print(optionalAddress!)
+
+// 강제 언래핑은 되도록이면 지양한다.
+// 언제 값이 변해 nil되면 Crash가 발생!
+optionalAddress = nil
+//print(optionalAddress!) // 에러
+
+// 강제 언래핑방식말고, 옵셔널 바인딩을 사용하자!
 var optionalName: String? = "김승진"
 
 if let name = optionalName {
@@ -833,8 +843,6 @@ if let name = optionalName {
 } else {
   print("nil일때 else문이 실행됨") // <- 이 부분이 실행
 }
-
-
 
 
 optionalName = "Jinnify"
@@ -861,7 +869,7 @@ doSomething()
 
 
 /*:
-멀티 바인딩
+멀티 옵셔널 바인딩
  */
 
 var opNum1: Int? = 123
@@ -882,7 +890,6 @@ if let num1 = opNum1 {
 if let num1 = opNum1, let num2 = opNum2 {
  print("\(num1) < \(num2)")
 }
-
 
 
 
@@ -927,25 +934,74 @@ class SeungJin2 {
   }
 }
 
+print("\n-------------- [Type Casting] --------------\n")
+
+/*:
+# Type Casting
+---
+ 1) as  : 타입 변환이 확실하게 가능한 경우(업캐스팅, 자기 자신 등) 에만 사용 가능. 그 외에는 컴파일 에러
+ 2) as? : 강제 타입 변환 시도. 변환이 성공하면 Optional 값을 가지며, 실패 시에는 nil 반환
+ 3)as! : 강제 타입 변환 시도. 성공 시 언래핑 된 값을 가지며, 실패 시 런타임 에러 발생
+---
+*/
+
+class Shape {
+  var color = UIColor.black
+  
+  func draw() {
+    print("draw shape")
+  }
+}
+
+class Rectangle: Shape {
+  var cornerRadius = 0.0
+  
+  override func draw() {
+    print("draw rect")
+  }
+}
+
+class Triangle: Shape {
+  override func draw() {
+    print("draw triangle")
+  }
+}
+
+/*
+<업 캐스팅>
+- 상속 관계에서 수퍼 클래스로의 변환 및 자기 자신의 타입으로 변환하는 것은 반드시 수행 가능
+- 이것을 업캐스팅이라 하며 as 키워드 사용 가능
+ */
 
 
+let rectangle = Rectangle() // 자식
+let shape: Shape = Rectangle() as Shape // 업캐스팅
+
+rectangle.color
+rectangle.cornerRadius
+
+shape.color
+//shape.cornerRadius // 존재하지 않음
 
 
+/*
+<다운 캐스팅>
+- 형제 클래스나 다른 서브 클래스 등 수퍼 클래스에서 파생된 각종 서브 클래스로의 타입 변환 의미
+- 반드시 성공한다는 보장이 없으므로 as? 또는 as! 를 사용
+ */
 
 
+let shapes = [Triangle(), Rectangle(), Triangle()]
+for shape in shapes {
+  if let triangle = shape as? Triangle {
+    triangle.draw()
+  } else if let rectangle = shape as? Rectangle {
+    rectangle.draw()
+  }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
+print("\n-------------- [Any, AnyObject] --------------\n")
 
 
 
