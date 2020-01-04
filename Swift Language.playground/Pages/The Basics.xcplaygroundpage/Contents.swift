@@ -765,22 +765,123 @@ print("\n-------------- [Optional] --------------\n")
 
  * Optional 은 값이 없을 수 있는(absent) 상황에 사용
  * 옵셔널 타입은 2가지 가능성을 지님
-    * 값을 전혀 가지고 있지 않음
+    * 값을 전혀 가지고 있지 않음 = nil
     * 값이 있으며, 그 값에 접근하기 위해 옵셔널을 벗겨(unwrap)낼 수 있음
 
  ![OptionalType](optional-type.png)
  */
 
+/**********************************************************
+- Objective-C 의 nil 과 Swift 의 nil의 차이점
 
-// Type Declaration
+       -> Swift 에서의 nil 은 Objective-C 에서의 nil 과 다르다.
+            nil of Swift : 값이 없다  in 모든타입 (Reference or Value Type)
+            nil of Objective-C : 값이 없다 in Reference Type
+
+
+- Objective-C에서 nil과 null의 차이
+   오브젝티브C에서 nil은 객체 참조에 사용되고 null은 기타 다른 포인터 자료형에 사용합니다.
+
+    //nil 사용
+    MyClass *obj = nil
+
+    // null 사용
+    int *ptr = NULL;
+ **********************************************************/
+
+
+/*:
+ 정의
+ */
+// 아무 값이 없는 nil
+// nil을 사용하기 위해 옵셔널을 사용
 var optionalType1: String?
-var optionalType2: Optional<Int>
-type(of: optionalType1)
+var optionalType2: Int?
+
+optionalType1 = nil
+//var varType: String = nil // 에러 발생
+
+print(optionalType1)
+print(optionalType2)
+
+
+
+/*:
+옵셔널 바인딩
+ -> 옵셔널(?)를 벗겨내고 값을 가져오고싶을때 사용한다!
+ 
+ ![if](optional-binding-if.png)
+ 
+ ![while](optional-binding-while.png)
+ 
+ ![guard](optional-binding-guard.png)
+*/
+
+var optionalName: String? = "김승진"
+
+if let name = optionalName {
+  print(name) // <- 이 부분이 실행
+} else {
+  print("nil일때 else문이 실행됨")
+}
+
+optionalName = nil
+
+// name이 (옵셔널 = nil)이기 때문에 else문을 탄다
+if let name = optionalName {
+  print(name)
+} else {
+  print("nil일때 else문이 실행됨") // <- 이 부분이 실행
+}
 
 
 
 
+optionalName = "Jinnify"
 
+func doSomething() {
+  guard let name = optionalName else {
+    print("nil일때 else문이 실행됨")
+    return
+  }
+  
+  print(name)
+}
+
+doSomething()
+
+/*:
+ ## guard let 과 if let의 차이점
+ 
+ 위의 예제를 보면,
+ * if let의 바인딩된 변수(name)은 외부에서 사용하지 못하고 scope { } 범위 내에서만 사용 가능
+ * guard let의 바인딩된 변수(name) 외부에서 사용 가능
+*/
+
+
+
+/*:
+멀티 바인딩
+ */
+
+var opNum1: Int? = 123
+var opNum2: Int? = 456
+
+// 옵셔널 바인딩할것이 많으면 계속 중첩해서 진행되야함.
+// 가독성이 떨어짐
+if let num1 = opNum1 {
+  if let num2 = opNum2 {
+    print("\(num1) < \(num2)")
+  }
+}
+
+// 위 아래 같은 방법
+
+// ,let 을 이용해서 한줄로 사용 가능
+// 보통 이런식으로 사용함
+if let num1 = opNum1, let num2 = opNum2 {
+ print("\(num1) < \(num2)")
+}
 
 
 
@@ -825,6 +926,9 @@ class SeungJin2 {
     self.height = height
   }
 }
+
+
+
 
 
 
