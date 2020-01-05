@@ -1,21 +1,15 @@
 import UIKit
-import os
-
-var str = "Hello, playground"
-
-enum Language: Int {
-  case kotlin = 0,
-  swift
-}
-
-let ddt = Language(rawValue: 0)
-
 
 
 print("\n-------------- [Constants and Variables] --------------\n")
-
+/*:
+ * var : 변수
+ * let : 상수
+ */
 var num1 = 0
+num1 = 3
 let num2 = 1
+//num2 = 3 // 에러
 
 print("\n-------------- [로그 출력] --------------\n")
 
@@ -267,7 +261,7 @@ default:
 print("\n-------------- [guard] --------------\n")
 
 /*:
- ## Early Exit
+ ### Early Exit
 
  * guard statement
  * guard 구문은 if구문과 유사하게 Bool 타입의 값으로 동작하는 기능.
@@ -302,11 +296,11 @@ update(by: version)
 print("\n-------------- [loops] --------------\n")
 
 /*:
- # C 스타일의 for 문은 지원하지 않음
+ ### C 스타일의 for 문은 지원하지 않음
 
  ```
  for (int i = 0; i <= 5; i++) {
- C 스타일의 for 문
+   // C 스타일의 for 문
  }
  ```
  */
@@ -755,6 +749,95 @@ persons.removeValue(forKey: "address")
 
 print("\n-------------- [Set] --------------\n")
 
+/*:
+### Set
+- Unordered Collection
+- Unique Value
+- Set Literal = Array Literal
+*/
+
+let fruitsSet: Set<String> = ["Apple", "Orange", "Melon"]
+let numbers: Set = [1, 2, 3, 3, 3]
+let emptySet = Set<String>()
+
+/*:
+ Number of Elements
+ */
+fruitsSet.count
+
+if !fruitsSet.isEmpty {
+  print("\(fruitsSet.count) element(s)")
+} else {
+  print("empty set")
+}
+
+/*:
+ Searching
+ */
+if fruitsSet.contains("Apple") {
+  
+}
+
+let productSet: Set = ["iPhone", "iPad", "Mac Pro", "iPad Pro", "Macbook Pro"]
+let filteredSet = productSet.filter { (element) -> Bool in
+  return element.hasPrefix("i")
+}
+
+filteredSet
+
+/*:
+ Add a New Element
+ */
+
+//[1,2,3].append(1)
+//[1,2,3].insert(2, at: 0)
+
+var set: Set<String> = []
+set.insert("Apple")
+set
+
+var result = set.insert("Orange")
+result
+set
+
+result = set.insert("Orange")
+result
+set
+
+/*:
+ Remove an Element
+ */
+set = ["Apple", "Orange", "Melon"]
+
+if let removed = set.remove("Apple") {
+  print("\(removed) has been removed!")
+}
+
+set
+
+set.removeAll(keepingCapacity: true)
+
+
+/*:
+ Compare two sets
+ */
+var favoriteFruits = Set(["Apple", "Orange", "Melon"])
+//var tropicalFruits = Set(["Banana", "Papaya", "Kiwi", "Pineapple"])
+var tropicalFruits = Set(["Orange", "Melon", "Apple"])
+
+if favoriteFruits == tropicalFruits {
+  print("favoriteFruits == tropicalFruits")
+} else {
+  print("favoriteFruits != tropicalFruits")
+}
+
+if favoriteFruits.elementsEqual(tropicalFruits) {
+  print("favoriteFruits == tropicalFruits")
+} else {
+  print("favoriteFruits != tropicalFruits")
+}
+
+
 
 
 print("\n-------------- [Optional] --------------\n")
@@ -933,6 +1016,18 @@ class SeungJin2 {
     self.height = height
   }
 }
+
+
+class LifeCycleClass {
+  init() {
+   print("LifeCycleClass initialized")
+  }
+  
+  deinit {
+    print("LifeCycleClass deinitialized")
+  }
+}
+
 
 print("\n-------------- [Type Casting] --------------\n")
 
@@ -1116,14 +1211,106 @@ performClosure { $0.count }
 */
 
 
+print("\n---------- [ Value Capture ] ----------\n")
+//: ### Value Type Capture
+var capNumA = 1
+var capNumB = 3
+var capNumC = 5
+var resultNum = 0
+
+print("Capture 전 초기값 :", capNumA, capNumB, capNumC)
+print("capNumA, capNumB만 캡처")
+let valueCapture = { [capNumA, capNumB] in
+  resultNum = capNumA + capNumB + capNumC
+  print("클로저 내부 값 :", capNumA, capNumB, capNumC, resultNum)
+}
+
+capNumA = 10
+capNumB = 10
+capNumC = 1
+resultNum = capNumA + capNumB + capNumC
+print("변경 값 :", capNumA, capNumB, capNumC)
+
+// capNumA, capNumB를 캡처해놨기 때문에 이 둘은 변하지 않고,
+// capNumC가 5에서 1로 변경된걸 볼 수 있다.
+valueCapture()
+
+
+print("\n---------- [ Reference Capture ] ----------\n")
+//: ### Reference Type Capture
+
+class RefClass {
+  var number = 0
+}
+
+var xRef = RefClass()
+var yRef = RefClass()
+print("Capture 전 초기값 :", xRef.number, yRef.number)
+
+let refCapture = { [xRef] in
+  print("클로저 내부 값", xRef.number, yRef.number)
+}
+
+xRef.number = 5
+yRef.number = 7
+print("변경 값 :", xRef.number, yRef.number)
+
+// xRef를 캡처했다고 해도 Reference의 특징처럼 메모 주소에 접근하기 때문에 값이 바뀐다.
+refCapture()
 
 
 
-
+print("\n---------- [ @noescaping, @escaping ] ----------\n")
 
 /*:
- ## Escaping
+ ## @escaping, @noescaping
+ * Swift 3.0 이후 - @noescaping 이 기본
+ 
+ * @noescaping -> 함수의 범위내에서만 클로저를 사용하는 경우
+ * @escaping
+    * 클로저가 함수로부터 escaping한다는 것은 해당 함수의 인자로 클로저가 전달되지만, 함수가 반환된 후 실행 되는 것을 의미.
+    * 함수의 인자가 함수의 영역을 탈출하여 함수 밖에서 사용할 수 있는 개념은 기존에 우리가 알고 있던 변수의 scope 개념을 무시. 왜냐하면 함수에서 선언된 로컬 변수가 로컬 변수의 영역을 뛰어넘어 함수 밖 에서도 유효
+    * 보통 completion handler에 사용됩니다.
+    * 비동기 작업으로 함수가 종료되고 난 후 작업이 끝나고 호출할 필요가 있는 클로져를 사용해야 할 때 탈출 클로저(Escaping Closure)가 필요합니다.
 */
+
+class Callee {
+  func doSomething(callback: (String) -> Void) {
+    callback("승진")
+  }
+}
+
+class Caller {
+  var callee: Callee = Callee()
+  var name = "Jinnify"
+  
+  var closure: (() -> Void) = {}
+  
+  func doSomething1() {
+    callee.doSomething { name in
+      self.name = name
+      print(name)
+    }
+  }
+  
+  func doSomething2(_ arg: () -> Void) {
+    // 클로저가 함수로부터 escaping한다는 것은 해당 함수의 인자로 클로저가 전달되지만, 함수가 반환된 후 실행 되는 것을 의미.
+    // self.closure = arg // @escaping이 필요
+  }
+  
+  func doSomething3(_ arg: @escaping () -> Void) {
+    // 클로저가 함수로부터 escaping한다는 것은 해당 함수의 인자로 클로저가 전달되지만, 함수가 반환된 후 실행 되는 것을 의미.
+    self.closure = arg // @escaping이 필요
+  }
+}
+
+
+let caller = Caller()
+caller.doSomething1()
+caller.doSomething3 {
+  
+}
+
 
 
 
