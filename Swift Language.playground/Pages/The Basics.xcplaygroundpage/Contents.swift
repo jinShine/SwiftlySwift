@@ -114,7 +114,7 @@ for i in (0..<10) {
 print("\n-------------- [Function] --------------\n")
 
 /*:
- ## Function Syntax
+ ## Function
  ![Function Syntax](func.png)
  */
 
@@ -1191,6 +1191,51 @@ anyObjectArray = [SomeClass1(), SomeClass2(), SomeClass1(), SomeClass2()]
 // 가변 타입이기때문에 사용할땐 타입 캐스팅이 필요함!
 var number1 = anyArray[0] as? Int
 var strText = anyArray[1] as? String
+
+
+print("\n---------- [ Extension ] ----------\n")
+/*:
+---
+# Extension
+
+ * 이름 그대로 class, struct, enum, protocol타입에 대해 확장해서 추가적으로 기능을 만들수 있다.
+ * 수평적 (상속은 수직적)
+---
+*/
+/*:
+ ### Syntax
+*/
+
+//extension SomeType {
+//
+//}
+
+/*:
+ ### Example
+*/
+class ViewController: UIViewController {
+
+  let number1 = 10
+  let number2 = 20
+
+  func add(param1: Int, param2: Int) {
+    print(param1 + param2)
+  }
+
+}
+
+let someVC = ViewController()
+someVC.add(param1: someVC.number1, param2: someVC.number2)
+
+// ViewController에서 기존에 존재하지 않았던 기능을 extension을 통해 수평적으로 추가
+extension ViewController {
+
+  func subtract(param1: Int, param2: Int) {
+    print(param1 - param2)
+  }
+}
+
+someVC.subtract(param1: 30, param2: 20)
 
 
 
