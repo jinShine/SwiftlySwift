@@ -976,11 +976,10 @@ if let num1 = opNum1, let num2 = opNum2 {
 
 
 
-
-
 print("\n-------------- [Class] --------------\n")
 /*:
 # Class
+ * Value Type
 ![Class](class.png)
 */
 
@@ -1027,6 +1026,59 @@ class LifeCycleClass {
     print("LifeCycleClass deinitialized")
   }
 }
+
+print("\n-------------- [Struct] --------------\n")
+
+/*:
+# Struct
+ * 클래스와 동일하게 프로퍼티, 메서드, 생성자, 프로토콜등을 사용할 수 있다.
+ * Value Type
+*/
+
+struct SomeS {
+  var width: Double = 0
+  var height: Double = 0
+  // var width: Double // 에러 초기값이 필요함
+
+
+  /*
+   생성자를 통해서 값을 받고 싶을때
+   */
+//  var width: Double
+//  var height: Double
+//
+//  init(width: Double, height: Double) {
+//    self.width = width
+//    self.height = height
+//  }
+
+}
+
+class SomeC {
+  var width: Double = 0
+  var height: Double = 0
+  // var width: Double // 에러 초기값이 필요함
+
+  /*
+  생성자를 통해서 값을 받고 싶을때
+  */
+//  var width: Double
+//  var height: Double
+//
+//  init(width: Double, height: Double) {
+//    self.width = width
+//    self.height = height
+//  }
+}
+
+/*
+ 인스턴스 생성 및 접근 방법
+*/
+let someS = SomeS()
+print(someS.width)
+
+let someC = SomeC()
+print(someC.width)
 
 
 print("\n-------------- [Type Casting] --------------\n")
