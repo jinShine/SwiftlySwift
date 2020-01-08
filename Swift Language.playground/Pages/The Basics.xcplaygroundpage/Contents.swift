@@ -73,9 +73,12 @@ print("\n-------------- [Operation] --------------\n")
 var a = 123
 var b = 456
 
+
+// 전위, 후위 증가 연산자는 존재하지 않음
+//a++ , ++a
+
 print(-a)
 
-//a++ , ++a
 print(a += 1)
 print(a = a + 1)
 
@@ -126,16 +129,21 @@ print("\n-------------- [Function] --------------\n")
  ## Function
  ![Function Syntax](func.png)
  */
-
+// 리턴 타입 O
 func funcName(param1: Int, param2: String) -> String {
   return String(param1) + param2
 }
 
 funcName(param1: 20, param2: "20") // "2020"
 
-func greetAgain(person: String) -> String {
-  return "Hello again, " + person + "!"
+// 리턴 타입 X을때 생략 가능
+func greetAgain(person: String) {
+  print("Hello again, " + person + "!")
 }
+
+//func greetAgain(person: String) -> Void {
+//  print("Hello again, " + person + "!")
+//}
 
 greetAgain(person: "Seungjin")
 
@@ -159,7 +167,7 @@ greetAgain(person: "Seungjin")
  */
 
 
-func testFunc1(_ param: Int) {
+func testFunc1(with param: Int) {
   print(param)
 }
 
@@ -167,7 +175,7 @@ func testFunc2(param: Int) {
   print(param)
 }
 
-testFunc1(10)
+testFunc1(with: 10)
 testFunc2(param: 20)
 
 func testFunc3() {
@@ -187,13 +195,27 @@ func testFunc3() {
  }
 
  */
-
 testFunc3()
+
+/*:
+ call by reference 방법
+ */
+func test11222223333333(param: inout Int) {
+  param = 30
+}
+var dummyValue = 10
+test11222223333333(param: &dummyValue)
+print(dummyValue)
+
+
+
 
 
 print("\n-------------- [if] --------------\n")
 
 /***************************************************
+<Syntax>
+
  if <#condition#> {
  <#code#>
  }
@@ -205,7 +227,7 @@ print("\n-------------- [if] --------------\n")
  }
  ***************************************************/
 
-// 다른 언어처럼 ()를 붙히지 않음
+// 다른 언어와 다르게 ()를 붙히지 않음
 
 if age >= 30 {
   print("true")
@@ -216,6 +238,8 @@ if age >= 30 {
 print("\n-------------- [switch] --------------\n")
 
 /***************************************************
+ <Syntax>
+
  switch <#value#> {
  case <#value 1#>:
  <#respond to value 1#>
@@ -280,6 +304,8 @@ print("\n-------------- [guard] --------------\n")
  */
 
 /***************************************************
+  <Syntax>
+
  if <#condition#> {
  <#code#>
  }
@@ -289,7 +315,6 @@ print("\n-------------- [guard] --------------\n")
  }
  ***************************************************/
 
-let version = 100
 func update(by version: Int) {
   guard version == 100 else {
     print("업데이트 필요 없음")
@@ -299,6 +324,7 @@ func update(by version: Int) {
   print("업데이트 필요")
 }
 
+let version = 100
 update(by: version)
 
 
@@ -312,10 +338,13 @@ print("\n-------------- [loops] --------------\n")
    // C 스타일의 for 문
  }
  ```
+
+ * for in을 이용한다.
+ * forEach 고차함수를 이용하는 방법도 존재.
  */
 
 
-for index in 1...4 {
+for index in (1...4) {
   print("\(index) times 5 is \(index * 5)")
 }
 
@@ -326,6 +355,11 @@ for str in list {
 
 for chr in "Hello" {
   print(chr, terminator: " ")
+}
+
+// 고차함수 이용 방법
+(1...3).forEach { num in
+  print(num)
 }
 
 
@@ -382,10 +416,10 @@ Language1.python
 
 
 //switch와 주로 사용
-let python = Language1.javascript
+let python = Language1.python
 
 switch python {
-case .javascript: print("찾았다")
+case .python: print("찾았다")
 default: break
 }
 
@@ -426,6 +460,8 @@ enum AppleMobile: String {
 enum Weekday: Int {
   case sunday, monday, tuesday, wednesday, thursday, friday, saturday
 }
+
+Weekday.sunday.rawValue // 0
 
 enum WeekdayName: String {
   case sunday="1", monday, tuesday, wednesday, thursday, friday, saturday
@@ -485,7 +521,7 @@ print("\n-------------- [Array] --------------\n")
  초기화 - 방법이 다양함
  */
 let strArray1: Array<String> = ["apple", "orange", "melon"]
-let strArray2: [String] = ["apple", "orange", "melon"]
+let strArray2: [String] = ["apple", "orange", "melon"] // 추천 방식
 let strArray3 = ["apple", "orange", "melon"]
 
 
