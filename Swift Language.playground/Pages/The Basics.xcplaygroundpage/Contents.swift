@@ -64,6 +64,9 @@ print(strAge)
 let doubleAge = Double(strAge)
 print(doubleAge!)
 
+// let dummyStr = "김승진"
+// print(Int(dummyStr))
+
 
 print("\n-------------- [Operation] --------------\n")
 
