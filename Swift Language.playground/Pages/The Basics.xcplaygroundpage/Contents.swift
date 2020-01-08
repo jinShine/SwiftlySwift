@@ -2,7 +2,7 @@ import UIKit
 
 /*:
  ## Swift
- * 함수형 프로그래밍 패러다임과 프로토콜 지향 프로그래밍 패러다임을 더한 언어이고
+ * 함수형 프로그래밍 패러다임과 프로토콜 지향 프로그래밍 패러다임을 더한 언어
  * 컴파일 언어
  */
 
@@ -1417,6 +1417,78 @@ caller.doSomething3 {
   
 }
 
+print("\n-------------- [Handling Error] --------------\n")
+
+/*:
+ Swift에서의 에러 처리는 다른 언어의 exception 처리와 닮았습니다.
+ ### 에러 처리 방법
+ 1. 에러를 발생시키는 함수 사용
+ 2. do-catch 구문 사용
+*/
+
+// enum을 통해 그룹화하여 에러를 제공하기 적합
+enum VendingMachineError: Error {
+     case invalidSelection
+     case insufficientFunds(coinsNeeded: Int)
+     case outOfStock
+}
+
+/*:
+ 에러를 발생시키는 함수 사용하기(Propagating Errors Using Throwing Fuctions)
+*/
+
+//throws이용
+//func canThrowErrors() throws -> String {}
+//func cannotThrowErrors() -> String {}
+
+//예제
+
+struct Item {
+    var price: Int
+    var count: Int
+}
+
+class VendingMachine {
+    var inventory = [
+        "Candy Bar": Item(price: 12, count: 7),
+        "Chips": Item(price: 10, count: 4),
+        "Pretzels": Item(price: 7, count: 11)
+    ]
+
+    var coinsDeposited = 0
+
+    func vend(itemNamed name: String) throws {
+        guard let item = inventory[name] else {
+            throw VendingMachineError.invalidSelection
+        }
+
+        guard item.count > 0 else {
+            throw VendingMachineError.outOfStock
+        }
+
+        guard item.price <= coinsDeposited else {
+            throw VendingMachineError.insufficientFunds(coinsNeeded: item.price - coinsDeposited)
+        }
+
+        coinsDeposited -= item.price
+
+        var newItem = item
+        newItem.count -= 1
+        inventory[name] = newItem
+
+        print("Dispensing \(name)")
+    }
+}
+
+let vm = VendingMachine()
+
+// vend(itemNamed:) 메소드는
+// throws메서드로써 에러를 발생시키기 때문에 이 메소드를 호출하는 메소드는 반드시 do-catch, try 구문을 사용해 에러를 처리해야 한다.
+do {
+  try vm.vend(itemNamed: "오레오")
+} catch {
+  print("Error", error)
+}
 
 
 
