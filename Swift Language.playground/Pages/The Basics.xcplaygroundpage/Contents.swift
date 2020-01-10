@@ -175,12 +175,15 @@ func testFunc2(param: Int) {
   print(param)
 }
 
+
+func testFunc3(_ param: Int) {
+  print(param)
+}
+
 testFunc1(with: 10)
 testFunc2(param: 20)
+testFunc3(30)
 
-func testFunc3() {
-  print("ㅎㅇ")
-}
 
 // 리턴값이 Void면 생략해서 많이 사용한다.
 // Void == ()
@@ -195,7 +198,11 @@ func testFunc3() {
  }
 
  */
-testFunc3()
+func testFunc4() {
+  print("ㅎㅇ")
+}
+
+testFunc4()
 
 /*:
  call by reference 방법
@@ -203,6 +210,8 @@ testFunc3()
 func test11222223333333(param: inout Int) {
   param = 30
 }
+
+
 var dummyValue = 10
 test11222223333333(param: &dummyValue)
 print(dummyValue)
@@ -399,7 +408,11 @@ twoTuple.value2
 print("\n-------------- [enumeration] --------------\n")
 
 enum Language1 {
-  case swift, kotlin, java, python, javascript
+  case swift,
+  kotlin,
+  java,
+  python,
+  javascript
 }
 
 enum Language2 {
@@ -949,6 +962,7 @@ print(optionalType2)
 var optionalAddress: String? = "동대문구 답십리"
 print(optionalAddress!)
 
+
 // 강제 언래핑은 되도록이면 지양한다.
 // 언제 값이 변해 nil되면 Crash가 발생!
 optionalAddress = nil
@@ -960,6 +974,7 @@ var optionalName: String? = "김승진"
 if let name = optionalName {
   print(name) // <- 이 부분이 실행
 } else {
+  // 예외처리
   print("nil일때 else문이 실행됨")
 }
 
@@ -980,7 +995,7 @@ func doSomething() {
     print("nil일때 else문이 실행됨")
     return
   }
-  
+
   print(name)
 }
 
@@ -1024,7 +1039,7 @@ if let num1 = opNum1, let num2 = opNum2 {
 print("\n-------------- [Class] --------------\n")
 /*:
 # Class
- * Value Type
+ * Reference Type
 ![Class](class.png)
 */
 
@@ -1234,7 +1249,8 @@ anyArray = [110, "str", true, 9.9, SomeClass1()]
 anyObjectArray = [SomeClass1(), SomeClass2(), SomeClass1(), SomeClass2()]
 
 // 가변 타입이기때문에 사용할땐 타입 캐스팅이 필요함!
-var number1 = anyArray[0] as? Int
+//let number1: Int = anyArray[0]
+
 var strText = anyArray[1] as? String
 
 
@@ -1299,6 +1315,7 @@ print("\n---------- [ Closure ] ----------\n")
 let simpleClosure = {
   print("This is SimpleClosure!!")
 }
+
 simpleClosure()
 
 //(Int, Int) -> String
@@ -1426,7 +1443,7 @@ class Caller {
   var callee: Callee = Callee()
   var name = "Jinnify"
   
-  var closure: (() -> Void) = {}
+  var closure: (() -> Void)? = {}
   
   func doSomething1() {
     callee.doSomething { name in
