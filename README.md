@@ -15,3 +15,13 @@
   * [iOS13 Adoption Ratio](https://developer.apple.com/support/app-store/)
   * SceneDelegate.swift 파일 삭제 방법
   * 스토리보드 알아보기
+
+**3Day**
+---
+* 앱 시작화면(Launch Screen)
+* 간단한 로그인 화면 만들기
+* 키보드 내리는 방법
+* present로 화면 띄우기
+  * 알림창(AlertController)
+  * 화면 모달형식으로 띄우기
+* 화면 전환을 통한 데이터 전달 방법

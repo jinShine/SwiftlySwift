@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Section02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yogiyo" translatesAutoresizingMaskIntoConstraints="NO" id="JDE-bA-44N">
+                                <rect key="frame" x="172" y="74" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Yqy-Du-FUc"/>
+                                    <constraint firstAttribute="height" constant="70" id="rOr-yS-04a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27p-2t-pIn">
+                                <rect key="frame" x="30" y="144" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhN-6t-x4O">
+                                <rect key="frame" x="30" y="190" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="et9-7m-17l">
+                                <rect key="frame" x="105" y="137.5" width="279" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tez-wl-F9J">
+                                <rect key="frame" x="105" y="183.5" width="279" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pre-JY-bkG">
+                                <rect key="frame" x="30" y="798" width="354" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="로그인 하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acy-Ag-BSd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="et9-7m-17l" firstAttribute="centerY" secondItem="27p-2t-pIn" secondAttribute="centerY" id="2pC-gJ-sHi"/>
+                            <constraint firstItem="et9-7m-17l" firstAttribute="leading" secondItem="27p-2t-pIn" secondAttribute="trailing" constant="30" id="9Zk-V9-8SC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pre-JY-bkG" secondAttribute="bottom" constant="30" id="DXi-fS-8In"/>
+                            <constraint firstItem="Pre-JY-bkG" firstAttribute="leading" secondItem="DhN-6t-x4O" secondAttribute="leading" id="GzM-Uy-1Us"/>
+                            <constraint firstItem="27p-2t-pIn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="NId-Zw-vQS"/>
+                            <constraint firstItem="JDE-bA-44N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="NhS-on-QhR"/>
+                            <constraint firstItem="DhN-6t-x4O" firstAttribute="top" secondItem="27p-2t-pIn" secondAttribute="bottom" constant="25" id="Qz8-Eh-hCv"/>
+                            <constraint firstItem="Pre-JY-bkG" firstAttribute="height" secondItem="tez-wl-F9J" secondAttribute="height" id="SwM-7h-uQ4"/>
+                            <constraint firstItem="Pre-JY-bkG" firstAttribute="trailing" secondItem="tez-wl-F9J" secondAttribute="trailing" id="ULo-Pw-Bhw"/>
+                            <constraint firstItem="tez-wl-F9J" firstAttribute="width" secondItem="et9-7m-17l" secondAttribute="width" id="VRe-Ab-l8p"/>
+                            <constraint firstItem="tez-wl-F9J" firstAttribute="centerY" secondItem="DhN-6t-x4O" secondAttribute="centerY" id="aO6-HM-hVv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="et9-7m-17l" secondAttribute="trailing" constant="30" id="evF-HY-BoL"/>
+                            <constraint firstItem="tez-wl-F9J" firstAttribute="leading" secondItem="et9-7m-17l" secondAttribute="leading" id="gPq-dP-pGP"/>
+                            <constraint firstItem="JDE-bA-44N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4p-p2-uhj"/>
+                            <constraint firstItem="DhN-6t-x4O" firstAttribute="leading" secondItem="27p-2t-pIn" secondAttribute="leading" id="svb-TM-Wgv"/>
+                            <constraint firstItem="tez-wl-F9J" firstAttribute="height" secondItem="et9-7m-17l" secondAttribute="height" id="yaP-0g-YRm"/>
+                            <constraint firstItem="27p-2t-pIn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zXS-Yu-0dA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="idLabel" destination="27p-2t-pIn" id="tVN-ev-QFl"/>
+                        <outlet property="idTextField" destination="et9-7m-17l" id="0uI-bK-bME"/>
+                        <outlet property="logoImageView" destination="JDE-bA-44N" id="jLP-d6-HP5"/>
+                        <outlet property="pwLabel" destination="DhN-6t-x4O" id="7eX-ny-FbS"/>
+                        <outlet property="pwTextField" destination="tez-wl-F9J" id="PCx-GI-XUX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="VTh-Wh-t81">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="Lg4-Pc-DYB" customClass="SecondViewController" customModule="Section02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTl-h4-laD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1X-Eq-oLn">
+                                <rect key="frame" x="186" y="386.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6v-iF-gBM">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBY-x6-UdX">
+                                <rect key="frame" x="354" y="74" width="30" height="30"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="Lg4-Pc-DYB" eventType="touchUpInside" id="UoN-7T-Iqi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="s6v-iF-gBM" firstAttribute="centerY" secondItem="jTl-h4-laD" secondAttribute="centerY" id="4zY-58-gL7"/>
+                            <constraint firstItem="3j6-ZW-yhX" firstAttribute="trailing" secondItem="UBY-x6-UdX" secondAttribute="trailing" constant="30" id="6XW-QP-izL"/>
+                            <constraint firstItem="s6v-iF-gBM" firstAttribute="centerX" secondItem="jTl-h4-laD" secondAttribute="centerX" id="9Yq-yf-B6q"/>
+                            <constraint firstItem="s6v-iF-gBM" firstAttribute="top" secondItem="J1X-Eq-oLn" secondAttribute="bottom" constant="30" id="j41-LO-EDE"/>
+                            <constraint firstItem="UBY-x6-UdX" firstAttribute="top" secondItem="3j6-ZW-yhX" secondAttribute="top" constant="30" id="kgt-qI-XEs"/>
+                            <constraint firstItem="J1X-Eq-oLn" firstAttribute="centerX" secondItem="jTl-h4-laD" secondAttribute="centerX" id="phy-u0-hvw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3j6-ZW-yhX"/>
+                    </view>
+                    <connections>
+                        <outlet property="idLabel" destination="J1X-Eq-oLn" id="yJl-lS-vXr"/>
+                        <outlet property="pwLabel" destination="s6v-iF-gBM" id="GXO-fF-984"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPz-Tj-hgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.05797101449286" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yogiyo" width="351" height="144"/>
+    </resources>
+</document>
