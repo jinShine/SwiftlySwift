@@ -21,7 +21,14 @@
 * 앱 시작화면(Launch Screen)
 * 간단한 로그인 화면 만들기
 * 키보드 내리는 방법
-* present로 화면 띄우기
+* present로 화면 띄우는 방법
   * 알림창(AlertController)
   * 화면 모달형식으로 띄우기
 * 화면 전환을 통한 데이터 전달 방법
+
+**4Day**
+---
+* Delegate란
+* UITextFieldDelegate 사용 방법
+* NavigationController
+  * push형식으로 화면 전환방법
