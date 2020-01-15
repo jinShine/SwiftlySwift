@@ -1,4 +1,5 @@
-# iOS Seminar 자료
+# iOS 강의 자료
+
 </br>
 
 **1Day**
