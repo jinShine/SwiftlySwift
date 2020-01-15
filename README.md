@@ -28,8 +28,16 @@
 
 **4Day**
 ---
-* Delegate란
+* Delegate 개념
 * UITextFieldDelegate 사용 방법
 * NavigationController
   * push형식으로 화면 전환방법
 * 04_Assignment (과제 제공)
+
+**5Day**
+---
+* TableView 개념
+* 스토리보드 및 코드를 활용한 Delegate, DataSource 연결 방법
+* 재사용 매커니즘 개념
+* Custom Cell 생성 방법
+* 05_Assignment (과제 제공)
