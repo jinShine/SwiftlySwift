@@ -18,7 +18,7 @@ class MemoComposeViewController: UIViewController {
   }
   
   @IBAction func dismiss(_ sender: UIBarButtonItem) {
-    
+    dismiss(animated: true, completion: nil)
   }
   
   @IBAction func save(_ sender: UIBarButtonItem) {
