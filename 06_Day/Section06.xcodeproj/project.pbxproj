@@ -12,6 +12,7 @@
 		5C8DC54C23D0A3E5003FF94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC54B23D0A3E5003FF94C /* Assets.xcassets */; };
 		5C8DC54F23D0A3E5003FF94C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC54D23D0A3E5003FF94C /* LaunchScreen.storyboard */; };
 		5C8DC56023D0AA4F003FF94C /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC55F23D0AA4F003FF94C /* MemoListViewController.swift */; };
+		5C8DC56223D0B19D003FF94C /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC56123D0B19D003FF94C /* MemoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5C8DC54E23D0A3E5003FF94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C8DC55023D0A3E5003FF94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C8DC55F23D0AA4F003FF94C /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		5C8DC56123D0B19D003FF94C /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8DC55F23D0AA4F003FF94C /* MemoListViewController.swift */,
+				5C8DC56123D0B19D003FF94C /* MemoCell.swift */,
 			);
 			path = MemoList;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				5C8DC56023D0AA4F003FF94C /* MemoListViewController.swift in Sources */,
 				5C8DC54323D0A3E3003FF94C /* AppDelegate.swift in Sources */,
+				5C8DC56223D0B19D003FF94C /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
