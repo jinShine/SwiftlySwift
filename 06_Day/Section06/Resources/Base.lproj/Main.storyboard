@@ -69,6 +69,54 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
+        <!--새 메모-->
+        <scene sceneID="oaW-J6-eNW">
+            <objects>
+                <viewController id="TzN-NJ-ssL" customClass="MemoComposeViewController" customModule="Section06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QLZ-8S-2bb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lWy-Cb-9PH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lWy-Cb-9PH" firstAttribute="leading" secondItem="BdQ-cy-x8z" secondAttribute="leading" id="9JW-ek-6fH"/>
+                            <constraint firstItem="BdQ-cy-x8z" firstAttribute="bottom" secondItem="lWy-Cb-9PH" secondAttribute="bottom" id="fHZ-zh-x2Y"/>
+                            <constraint firstItem="lWy-Cb-9PH" firstAttribute="top" secondItem="BdQ-cy-x8z" secondAttribute="top" id="olE-pg-7yh"/>
+                            <constraint firstItem="BdQ-cy-x8z" firstAttribute="trailing" secondItem="lWy-Cb-9PH" secondAttribute="trailing" id="q38-Gf-dQs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BdQ-cy-x8z"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="새 메모" id="oa0-pF-95n">
+                        <barButtonItem key="leftBarButtonItem" image="Icon-Cancel" id="4kQ-hh-84i">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="dismiss:" destination="TzN-NJ-ssL" id="4fV-jn-lVv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Icon-Save" id="NXF-jP-cte">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="save:" destination="TzN-NJ-ssL" id="VkA-nM-bbB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="lWy-Cb-9PH" id="AwP-hG-g6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCR-y9-j9P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="844"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HCy-TM-D1q">
             <objects>
@@ -87,8 +135,28 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KeC-JH-nRH">
+            <objects>
+                <navigationController storyboardIdentifier="MemoComposeViewController" automaticallyAdjustsScrollViewInsets="NO" id="Hh6-on-gZS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="e50-Ik-E50">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TzN-NJ-ssL" kind="relationship" relationship="rootViewController" id="WON-F8-E3X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsQ-mo-a4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="844"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Icon-Cancel" width="24" height="24"/>
         <image name="Icon-Plus" width="24" height="24"/>
+        <image name="Icon-Save" width="24" height="24"/>
     </resources>
 </document>

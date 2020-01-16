@@ -13,6 +13,7 @@
 		5C8DC54F23D0A3E5003FF94C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC54D23D0A3E5003FF94C /* LaunchScreen.storyboard */; };
 		5C8DC56023D0AA4F003FF94C /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC55F23D0AA4F003FF94C /* MemoListViewController.swift */; };
 		5C8DC56223D0B19D003FF94C /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC56123D0B19D003FF94C /* MemoCell.swift */; };
+		5C8DC56923D0BD55003FF94C /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC56823D0BD55003FF94C /* MemoComposeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5C8DC55023D0A3E5003FF94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C8DC55F23D0AA4F003FF94C /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
 		5C8DC56123D0B19D003FF94C /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		5C8DC56823D0BD55003FF94C /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8DC55E23D0AA41003FF94C /* MemoList */,
+				5C8DC56723D0BD3D003FF94C /* MemoCompose */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -105,6 +108,14 @@
 				5C8DC56123D0B19D003FF94C /* MemoCell.swift */,
 			);
 			path = MemoList;
+			sourceTree = "<group>";
+		};
+		5C8DC56723D0BD3D003FF94C /* MemoCompose */ = {
+			isa = PBXGroup;
+			children = (
+				5C8DC56823D0BD55003FF94C /* MemoComposeViewController.swift */,
+			);
+			path = MemoCompose;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8DC56023D0AA4F003FF94C /* MemoListViewController.swift in Sources */,
+				5C8DC56923D0BD55003FF94C /* MemoComposeViewController.swift in Sources */,
 				5C8DC54323D0A3E3003FF94C /* AppDelegate.swift in Sources */,
 				5C8DC56223D0B19D003FF94C /* MemoCell.swift in Sources */,
 			);
