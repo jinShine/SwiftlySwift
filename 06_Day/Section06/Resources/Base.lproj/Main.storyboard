@@ -59,6 +59,9 @@
                     <navigationItem key="navigationItem" title="메모 목록" id="RqV-0R-nQL">
                         <barButtonItem key="rightBarButtonItem" image="Icon-Plus" id="WCp-Pp-dVy">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addMemo:" destination="BYZ-38-t0r" id="o13-Za-BPa"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -141,7 +144,7 @@
                 <navigationController storyboardIdentifier="MemoComposeViewController" automaticallyAdjustsScrollViewInsets="NO" id="Hh6-on-gZS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="e50-Ik-E50">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

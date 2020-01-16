@@ -22,6 +22,15 @@ class MemoListViewController: UIViewController {
     tableView.delegate = self
     tableView.dataSource = self
   }
+  
+  @IBAction func addMemo(_ sender: UIBarButtonItem) {
+    if let composeVC = storyboard?.instantiateViewController(
+      withIdentifier: String(describing: "MemoComposeViewController")
+      ) as? UINavigationController {
+      present(composeVC, animated: true, completion: nil)
+    }
+  }
+  
 }
 
 extension MemoListViewController: UITableViewDataSource {
