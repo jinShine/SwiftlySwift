@@ -14,6 +14,7 @@
 		5C8DC56023D0AA4F003FF94C /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC55F23D0AA4F003FF94C /* MemoListViewController.swift */; };
 		5C8DC56223D0B19D003FF94C /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC56123D0B19D003FF94C /* MemoCell.swift */; };
 		5C8DC56923D0BD55003FF94C /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC56823D0BD55003FF94C /* MemoComposeViewController.swift */; };
+		5C8DC56D23D23673003FF94C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC56C23D23673003FF94C /* Constant.swift */; };
 		5CA8B35923D144B3003CEBA8 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8B35823D144B3003CEBA8 /* Memo.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		5C8DC55F23D0AA4F003FF94C /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
 		5C8DC56123D0B19D003FF94C /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		5C8DC56823D0BD55003FF94C /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
+		5C8DC56C23D23673003FF94C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = SOURCE_ROOT; };
 		5CA8B35823D144B3003CEBA8 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		5C8DC55A23D0A847003FF94C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5C8DC56C23D23673003FF94C /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				5C8DC54323D0A3E3003FF94C /* AppDelegate.swift in Sources */,
 				5C8DC56223D0B19D003FF94C /* MemoCell.swift in Sources */,
 				5CA8B35923D144B3003CEBA8 /* Memo.swift in Sources */,
+				5C8DC56D23D23673003FF94C /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

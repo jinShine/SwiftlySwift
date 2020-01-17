@@ -31,11 +31,26 @@ class MemoListViewController: UIViewController {
       
       composeVC.addHandler = { memo in
         self.memos.insert(memo, at: 0)
+        self.saveAll()
         self.tableView.reloadData()
       }
       
       present(naviVC, animated: true, completion: nil)
     }
+  }
+  
+  func saveAll() {
+    
+    let data = memos.map { memo in
+      [
+        "content" : memo.content,
+        "insertDate" : memo.date
+      ]
+    }
+    
+    let userDefaults = UserDefaults.standard
+    userDefaults.set(data, forKey: UserDefaultsKeys.memoList)
+    userDefaults.synchronize()
   }
   
 }
