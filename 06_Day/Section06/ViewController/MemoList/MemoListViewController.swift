@@ -24,10 +24,14 @@ class MemoListViewController: UIViewController {
   }
   
   @IBAction func addMemo(_ sender: UIBarButtonItem) {
-    if let composeVC = storyboard?.instantiateViewController(
-      withIdentifier: String(describing: "MemoComposeViewController")
-      ) as? UINavigationController {
-      present(composeVC, animated: true, completion: nil)
+    if let naviVC = storyboard?.instantiateViewController(withIdentifier: String(describing: "MemoComposeViewController")) as? UINavigationController,
+      let composeVC = naviVC.viewControllers.first as? MemoComposeViewController {
+      
+      composeVC.addHandler = { memo in
+        print(memo)
+      }
+      
+      present(naviVC, animated: true, completion: nil)
     }
   }
   
