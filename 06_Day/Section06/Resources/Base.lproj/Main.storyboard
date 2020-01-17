@@ -39,6 +39,9 @@
                                                 <constraint firstItem="lqL-RE-jN3" firstAttribute="centerY" secondItem="rE4-kr-7jW" secondAttribute="centerY" id="Spj-jj-eoO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="lqL-RE-jN3" id="cqU-4W-vfV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

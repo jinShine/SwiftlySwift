@@ -10,6 +10,8 @@ import UIKit
 
 class MemoCell: UITableViewCell {
   
+  @IBOutlet weak var contentLabel: UILabel!
+  
   override func awakeFromNib() {
     super.awakeFromNib()
     
