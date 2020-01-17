@@ -11,7 +11,9 @@ import UIKit
 class MemoComposeViewController: UIViewController {
   
   @IBOutlet weak var contentTextView: UITextView!
-
+  
+  var addHandler: ((Memo) -> Void)?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -31,6 +33,11 @@ class MemoComposeViewController: UIViewController {
       present(controller, animated: true, completion: nil)
       return
     }
+    
+    let memo = Memo(content: content, date: Date())
+    addHandler?(memo)
+    
+    dismiss(animated: true, completion: nil)
   }
   
 }
