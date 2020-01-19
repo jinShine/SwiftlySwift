@@ -24,7 +24,7 @@ class MemoDetailViewController: UIViewController {
   }
   
   @IBAction func pop(_ sender: UIBarButtonItem) {
-    
+    navigationController?.popViewController(animated: true)
   }
   
 }
