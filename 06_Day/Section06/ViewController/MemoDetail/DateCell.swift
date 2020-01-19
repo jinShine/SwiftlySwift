@@ -23,7 +23,13 @@ class DateCell: UITableViewCell {
   }
   
   func configure(with date: Date?) {
-    self.dateLabel.text = String(describing: date)
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+    formatter.timeStyle = .medium
+    formatter.locale = Locale(identifier: "Ko_kr")
+    if let date = date {
+      self.dateLabel.text = formatter.string(from: date)
+    }
   }
   
 }
