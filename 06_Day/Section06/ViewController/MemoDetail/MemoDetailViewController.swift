@@ -12,9 +12,10 @@ class MemoDetailViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
+  private var memo: Memo?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     
   }
   
@@ -25,6 +26,10 @@ class MemoDetailViewController: UIViewController {
   
   @IBAction func pop(_ sender: UIBarButtonItem) {
     navigationController?.popViewController(animated: true)
+  }
+  
+  func configure(with memo: Memo) {
+    self.memo = memo
   }
   
 }

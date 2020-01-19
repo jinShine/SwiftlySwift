@@ -90,6 +90,9 @@ extension MemoListViewController: UITableViewDelegate {
     guard let detailVC = storyboard?.instantiateViewController(
       withIdentifier: String(describing: MemoDetailViewController.self)
       ) as? MemoDetailViewController else { return }
+    
+    detailVC.configure(with: memos[indexPath.row])
+    
     navigationController?.pushViewController(detailVC, animated: true)
   }
 }
