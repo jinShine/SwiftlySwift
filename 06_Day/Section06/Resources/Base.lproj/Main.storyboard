@@ -75,6 +75,22 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
+        <!--Memo Detail View Controller-->
+        <scene sceneID="owg-rg-feb">
+            <objects>
+                <viewController storyboardIdentifier="MemoDetailViewController" id="svf-za-zsD" customClass="MemoDetailViewController" customModule="Section06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="buC-x8-VJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RTD-5x-GeT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DT8-4y-pCe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFF-oj-05j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920" y="138"/>
+        </scene>
         <!--새 메모-->
         <scene sceneID="oaW-J6-eNW">
             <objects>
@@ -129,7 +145,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gnA-Jb-77s" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="kCm-a3-CBq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -147,7 +163,7 @@
                 <navigationController storyboardIdentifier="MemoComposeViewController" automaticallyAdjustsScrollViewInsets="NO" id="Hh6-on-gZS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="e50-Ik-E50">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
