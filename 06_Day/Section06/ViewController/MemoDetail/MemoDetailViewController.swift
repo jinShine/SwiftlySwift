@@ -17,6 +17,7 @@ class MemoDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    setupUI()
   }
   
   private func setupUI() {
@@ -37,11 +38,32 @@ class MemoDetailViewController: UIViewController {
 extension MemoDetailViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+    return 2
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+    switch indexPath.row {
+    case 0:
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: "ContentCell", for: indexPath
+        ) as? ContentCell else {
+        return UITableViewCell()
+      }
+      cell.configure(with: memo?.content)
+      
+      return cell
+    case 1:
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: "DateCell", for: indexPath
+        ) as? DateCell else {
+        return UITableViewCell()
+      }
+      cell.configure(with: memo?.date)
+      
+      return cell
+    default:
+      return UITableViewCell()
+    }
   }
 }
 
