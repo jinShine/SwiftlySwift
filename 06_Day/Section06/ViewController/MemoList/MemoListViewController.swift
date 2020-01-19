@@ -18,6 +18,7 @@ class MemoListViewController: UIViewController {
     super.viewDidLoad()
 
     setupUI()
+    loadAll()
   }
   
   private func setupUI() {
@@ -40,7 +41,6 @@ class MemoListViewController: UIViewController {
   }
   
   func saveAll() {
-    
     let data = memos.map { memo in
       [
         "content" : memo.content,
@@ -51,6 +51,17 @@ class MemoListViewController: UIViewController {
     let userDefaults = UserDefaults.standard
     userDefaults.set(data, forKey: UserDefaultsKeys.memoList)
     userDefaults.synchronize()
+  }
+  
+  func loadAll() {
+    let userDefaults = UserDefaults.standard
+    guard let data = userDefaults.object(forKey: UserDefaultsKeys.memoList) as? [[String: Any]] else { return }
+    
+    self.memos = data.map { memo in
+      let content = memo["content"] as? String ?? ""
+      let insertDate = memo["insertDate"] as? Date ?? Date()
+      return Memo(content: content, date: insertDate)
+    }
   }
   
 }
