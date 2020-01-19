@@ -23,7 +23,7 @@ class MemoDetailViewController: UIViewController {
     tableView.dataSource = self
   }
   
-  @IBAction func dismiss(_ sender: UIBarButtonItem) {
+  @IBAction func pop(_ sender: UIBarButtonItem) {
     
   }
   
