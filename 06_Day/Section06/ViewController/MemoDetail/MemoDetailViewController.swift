@@ -10,6 +10,11 @@ import UIKit
 
 class MemoDetailViewController: UIViewController {
   
+  enum CellType: Int {
+    case content,
+    date
+  }
+  
   @IBOutlet weak var tableView: UITableView!
   
   private var memo: Memo?
@@ -42,8 +47,9 @@ extension MemoDetailViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    switch indexPath.row {
-    case 0:
+    
+    switch CellType(rawValue: indexPath.row) {
+    case .content:
       guard let cell = tableView.dequeueReusableCell(
         withIdentifier: "ContentCell", for: indexPath
         ) as? ContentCell else {
@@ -52,7 +58,7 @@ extension MemoDetailViewController: UITableViewDataSource {
       cell.configure(with: memo?.content)
       
       return cell
-    case 1:
+    case .date:
       guard let cell = tableView.dequeueReusableCell(
         withIdentifier: "DateCell", for: indexPath
         ) as? DateCell else {
