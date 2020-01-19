@@ -95,7 +95,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrS-xM-ogg">
-                                                    <rect key="frame" x="30" y="11.5" width="354" height="21"/>
+                                                    <rect key="frame" x="30" y="11.5" width="354" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -104,6 +104,7 @@
                                             <constraints>
                                                 <constraint firstItem="FrS-xM-ogg" firstAttribute="centerY" secondItem="Xgt-TA-bFL" secondAttribute="centerY" id="2qf-Z5-2yu"/>
                                                 <constraint firstItem="FrS-xM-ogg" firstAttribute="leading" secondItem="Xgt-TA-bFL" secondAttribute="leading" constant="30" id="NWq-tL-7Hx"/>
+                                                <constraint firstItem="FrS-xM-ogg" firstAttribute="centerX" secondItem="Xgt-TA-bFL" secondAttribute="centerX" id="T25-LI-gyL"/>
                                                 <constraint firstAttribute="trailing" secondItem="FrS-xM-ogg" secondAttribute="trailing" constant="30" id="w7X-hp-5fN"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -145,9 +146,15 @@
                     <navigationItem key="navigationItem" title="메모 보기" id="pZX-vV-nt5">
                         <barButtonItem key="leftBarButtonItem" image="Icon-Back" id="VJ1-BA-pkU">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="dismiss:" destination="svf-za-zsD" id="Gph-Lb-lcM"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="L0I-9b-0Tk" id="BkR-KV-mmb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFF-oj-05j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
