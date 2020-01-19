@@ -75,17 +75,34 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--Memo Detail View Controller-->
+        <!--메모 보기-->
         <scene sceneID="owg-rg-feb">
             <objects>
                 <viewController storyboardIdentifier="MemoDetailViewController" id="svf-za-zsD" customClass="MemoDetailViewController" customModule="Section06" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="buC-x8-VJ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-9b-0Tk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RTD-5x-GeT" firstAttribute="bottom" secondItem="L0I-9b-0Tk" secondAttribute="bottom" id="77s-2Q-KtT"/>
+                            <constraint firstItem="RTD-5x-GeT" firstAttribute="trailing" secondItem="L0I-9b-0Tk" secondAttribute="trailing" id="GqC-vE-eqM"/>
+                            <constraint firstItem="L0I-9b-0Tk" firstAttribute="leading" secondItem="RTD-5x-GeT" secondAttribute="leading" id="oW9-5k-ECi"/>
+                            <constraint firstItem="L0I-9b-0Tk" firstAttribute="top" secondItem="RTD-5x-GeT" secondAttribute="top" id="xT5-dD-acA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RTD-5x-GeT"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DT8-4y-pCe"/>
+                    <navigationItem key="navigationItem" title="메모 보기" id="pZX-vV-nt5">
+                        <barButtonItem key="leftBarButtonItem" image="Icon-Back" id="VJ1-BA-pkU">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFF-oj-05j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,6 +194,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon-Back" width="24" height="24"/>
         <image name="Icon-Cancel" width="24" height="24"/>
         <image name="Icon-Plus" width="24" height="24"/>
         <image name="Icon-Save" width="24" height="24"/>
