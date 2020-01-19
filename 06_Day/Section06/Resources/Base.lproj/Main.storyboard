@@ -88,24 +88,24 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="bKY-DT-hbV" customClass="ContentCell" customModule="Section06" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bKY-DT-hbV" id="Xgt-TA-bFL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrS-xM-ogg">
-                                                    <rect key="frame" x="30" y="12" width="354" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrS-xM-ogg">
+                                                    <rect key="frame" x="30" y="10" width="354" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="FrS-xM-ogg" firstAttribute="centerY" secondItem="Xgt-TA-bFL" secondAttribute="centerY" id="2qf-Z5-2yu"/>
-                                                <constraint firstItem="FrS-xM-ogg" firstAttribute="leading" secondItem="Xgt-TA-bFL" secondAttribute="leading" constant="30" id="NWq-tL-7Hx"/>
-                                                <constraint firstItem="FrS-xM-ogg" firstAttribute="centerX" secondItem="Xgt-TA-bFL" secondAttribute="centerX" id="T25-LI-gyL"/>
-                                                <constraint firstAttribute="trailing" secondItem="FrS-xM-ogg" secondAttribute="trailing" constant="30" id="w7X-hp-5fN"/>
+                                                <constraint firstItem="FrS-xM-ogg" firstAttribute="top" secondItem="Xgt-TA-bFL" secondAttribute="top" constant="10" id="cY9-JR-YYV"/>
+                                                <constraint firstAttribute="bottom" secondItem="FrS-xM-ogg" secondAttribute="bottom" constant="10" id="kv4-rR-OaM"/>
+                                                <constraint firstAttribute="trailing" secondItem="FrS-xM-ogg" secondAttribute="trailing" constant="30" id="nxP-pd-Tzn"/>
+                                                <constraint firstItem="FrS-xM-ogg" firstAttribute="leading" secondItem="Xgt-TA-bFL" secondAttribute="leading" constant="30" id="uaS-ZU-gtC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -113,7 +113,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" id="b22-Q2-qtk" customClass="DateCell" customModule="Section06" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="68.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b22-Q2-qtk" id="BDA-LB-Aal">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
