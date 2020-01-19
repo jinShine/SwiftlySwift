@@ -84,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-9b-0Tk">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="bKY-DT-hbV" customClass="ContentCell" customModule="Section06" customModuleProvider="target">
@@ -139,11 +139,27 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1O-ft-Myv">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem image="Icon-Trash" id="iXu-8h-UYP">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BJv-yH-pbO"/>
+                                    <barButtonItem image="Icon-Edit" id="RNL-Mp-RCZ">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="RTD-5x-GeT" firstAttribute="bottom" secondItem="L0I-9b-0Tk" secondAttribute="bottom" id="77s-2Q-KtT"/>
+                            <constraint firstItem="N1O-ft-Myv" firstAttribute="top" secondItem="L0I-9b-0Tk" secondAttribute="bottom" symbolic="YES" id="014-aH-gAG"/>
                             <constraint firstItem="RTD-5x-GeT" firstAttribute="trailing" secondItem="L0I-9b-0Tk" secondAttribute="trailing" id="GqC-vE-eqM"/>
+                            <constraint firstItem="N1O-ft-Myv" firstAttribute="top" secondItem="L0I-9b-0Tk" secondAttribute="bottom" symbolic="YES" id="UmB-Xp-jnw"/>
+                            <constraint firstItem="N1O-ft-Myv" firstAttribute="bottom" secondItem="RTD-5x-GeT" secondAttribute="bottom" id="dZ5-KL-28v"/>
+                            <constraint firstItem="N1O-ft-Myv" firstAttribute="trailing" secondItem="RTD-5x-GeT" secondAttribute="trailing" id="edY-WZ-Ya2"/>
+                            <constraint firstItem="N1O-ft-Myv" firstAttribute="leading" secondItem="RTD-5x-GeT" secondAttribute="leading" id="kp7-uW-QpB"/>
                             <constraint firstItem="L0I-9b-0Tk" firstAttribute="leading" secondItem="RTD-5x-GeT" secondAttribute="leading" id="oW9-5k-ECi"/>
                             <constraint firstItem="L0I-9b-0Tk" firstAttribute="top" secondItem="RTD-5x-GeT" secondAttribute="top" id="xT5-dD-acA"/>
                         </constraints>
@@ -164,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFF-oj-05j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920" y="138"/>
+            <point key="canvasLocation" x="1918.840579710145" y="137.94642857142856"/>
         </scene>
         <!--새 메모-->
         <scene sceneID="oaW-J6-eNW">
@@ -254,7 +270,9 @@
     <resources>
         <image name="Icon-Back" width="24" height="24"/>
         <image name="Icon-Cancel" width="24" height="24"/>
+        <image name="Icon-Edit" width="24" height="24"/>
         <image name="Icon-Plus" width="24" height="24"/>
         <image name="Icon-Save" width="24" height="24"/>
+        <image name="Icon-Trash" width="24" height="24"/>
     </resources>
 </document>
