@@ -34,6 +34,14 @@ class MemoDetailViewController: UIViewController {
     navigationController?.popViewController(animated: true)
   }
   
+  @IBAction func deleteMemo(_ sender: UIBarButtonItem) {
+    
+  }
+
+  @IBAction func editMemo(_ sender: UIBarButtonItem) {
+
+  }
+
   func configure(with memo: Memo) {
     self.memo = memo
   }
