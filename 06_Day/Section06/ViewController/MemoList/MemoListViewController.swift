@@ -91,8 +91,13 @@ extension MemoListViewController: UITableViewDelegate {
       withIdentifier: String(describing: MemoDetailViewController.self)
       ) as? MemoDetailViewController else { return }
     
-    detailVC.configure(with: memos[indexPath.row])
-    
+    detailVC.configure(with: memos[indexPath.row], at: indexPath)
+    detailVC.deleteHandler = { indexPath in
+      self.memos.remove(at: indexPath.row)
+      self.saveAll()
+      self.tableView.reloadData()
+    }
+
     navigationController?.pushViewController(detailVC, animated: true)
   }
 }

@@ -16,9 +16,11 @@ class MemoDetailViewController: UIViewController {
   }
   
   @IBOutlet weak var tableView: UITableView!
-  
+
   private var memo: Memo?
-  
+  private var indexPath: IndexPath?
+  var deleteHandler: ((IndexPath) -> Void)?
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -35,15 +37,18 @@ class MemoDetailViewController: UIViewController {
   }
   
   @IBAction func deleteMemo(_ sender: UIBarButtonItem) {
-    
+    guard let indexPath = indexPath else { return }
+    deleteHandler?(indexPath)
+    navigationController?.popViewController(animated: true)
   }
 
   @IBAction func editMemo(_ sender: UIBarButtonItem) {
 
   }
 
-  func configure(with memo: Memo) {
+  func configure(with memo: Memo, at indexPath: IndexPath) {
     self.memo = memo
+    self.indexPath = indexPath
   }
   
 }
