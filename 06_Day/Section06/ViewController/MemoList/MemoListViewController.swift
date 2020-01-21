@@ -97,6 +97,11 @@ extension MemoListViewController: UITableViewDelegate {
       self.saveAll()
       self.tableView.reloadData()
     }
+    detailVC.editHandler = { (memo, indexPath) in
+      self.memos[indexPath.row] = memo
+      self.saveAll()
+      self.tableView.reloadData()
+    }
 
     navigationController?.pushViewController(detailVC, animated: true)
   }

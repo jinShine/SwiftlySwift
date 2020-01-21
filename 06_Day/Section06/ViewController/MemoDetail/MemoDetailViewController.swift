@@ -20,6 +20,7 @@ class MemoDetailViewController: UIViewController {
   private var memo: Memo?
   private var indexPath: IndexPath?
   var deleteHandler: ((IndexPath) -> Void)?
+  var editHandler: ((Memo, IndexPath) -> Void)?
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -33,6 +34,8 @@ class MemoDetailViewController: UIViewController {
   }
   
   @IBAction func pop(_ sender: UIBarButtonItem) {
+    guard let memo = memo, let indexPath = indexPath else { return }
+    editHandler?(memo, indexPath)
     navigationController?.popViewController(animated: true)
   }
   
@@ -43,7 +46,15 @@ class MemoDetailViewController: UIViewController {
   }
 
   @IBAction func editMemo(_ sender: UIBarButtonItem) {
-
+    guard let naviVC = storyboard?.instantiateViewController(withIdentifier: "MemoComposeViewController") as? UINavigationController,
+    let composeVC = naviVC.viewControllers.first as? MemoComposeViewController else { return }
+    
+    composeVC.memo = memo
+    composeVC.addHandler = { memo in
+      self.memo = memo
+      self.tableView.reloadData()
+    }
+    present(naviVC, animated: true, completion: nil)
   }
 
   func configure(with memo: Memo, at indexPath: IndexPath) {
