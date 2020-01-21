@@ -41,3 +41,9 @@
 * 재사용 매커니즘 개념
 * Custom Cell 생성 방법
 * [05_Assignment](https://github.com/jinShine/iOS_Seminar/tree/master/05_Assignment) (과제 제공)
+
+**6Day~**
+---
+* 05_Assignment - 과제 리뷰
+* Github 업로드 방법
+* TODO App 시작
