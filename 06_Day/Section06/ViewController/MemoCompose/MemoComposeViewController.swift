@@ -13,10 +13,16 @@ class MemoComposeViewController: UIViewController {
   @IBOutlet weak var contentTextView: UITextView!
   
   var addHandler: ((Memo) -> Void)?
+  var memo: Memo?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    setupUI()
+  }
+  
+  private func setupUI() {
+    contentTextView.text = memo?.content
   }
   
   @IBAction func dismiss(_ sender: UIBarButtonItem) {
