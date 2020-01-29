@@ -44,8 +44,13 @@
 * Custom Cell 생성 방법
 * [05_Assignment](https://github.com/jinShine/iOS_Seminar/tree/master/05_Assignment) (과제 제공)
 
-**6Day~**
+**6Day~12Day**
 ---
+* **TODO App 시작** 
 * 05_Assignment - 과제 리뷰
 * Github 업로드 방법
-* TODO App 시작
+* TableView의 사용법
+* Create, Read, Update, Delete 개념
+* UserDefaults
+* awakeFromNib이란?
+* 전체적인 앱의 구성 (MVC 패턴, 앱의 아이콘 이미지 구성, 파일 구조)
