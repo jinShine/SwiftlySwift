@@ -49,6 +49,7 @@
 * **TODO App 구현** 
 * 05_Assignment - 과제 리뷰
 * Github 업로드 방법
+* ViewController Life Cycle(생명주기)
 * TableView의 사용법
 * Create, Read, Update, Delete 개념
 * UserDefaults
@@ -58,3 +59,23 @@
 * 클로저를 이용한 데이터 전달 방법
 * 앱 아이콘 이미지 넣는 방법
 * 앱 Name 변경 방법
+
+**13Day**
+---
+* Todo App 전체 리뷰
+* Q&A
+
+**14Day**
+---
+* CocoaPods 설치 및 사용 방법
+* HTTP통신개념 및 Alamofire사용법
+
+**15Day**
+---
+* Codable이란?
+* 통신 후 Data 디코딩 방법 학습
+
+**16Day**
+---
+* Network Tranning
+* 리뷰
