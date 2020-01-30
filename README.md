@@ -70,12 +70,10 @@
 * CocoaPods 설치 및 사용 방법
 * HTTP통신개념 및 Alamofire사용법
 
-**15Day**
+**15Day~**
 ---
 * Codable이란?
 * 통신 후 Data 디코딩 방법 학습
-
-**16Day**
----
 * Network Tranning
 * 리뷰
+
