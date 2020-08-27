@@ -1590,5 +1590,27 @@ switch wildcardStr {
 case _: print(wildcardStr + "패턴" )
 }
 
+// 옵셔널 매칭
+
+let wildcardOptionalStr: String? = "와일드카드"
+
+switch wildcardOptionalStr {
+  // Optional("와일드카드")일때만 실행
+case "와일드카드"?: print(wildcardOptionalStr)
+  // Optional("와일드카드")이외의 값이 있을때만 실행
+case _?: print(wildcardOptionalStr)
+  // 값이 없을때 실행(nil)
+case nil: print("nil")
+}
+
+let buzz = ("buzz", 30, "male")
+
+switch buzz {
+case ("buzz", _, _):
+  print("첫번째 요소가 buzz일때 실행")
+case (_, _, _):
+  print("그 외 언제든지 실행됨")
+}
+
 //: [Next](@next)
 
