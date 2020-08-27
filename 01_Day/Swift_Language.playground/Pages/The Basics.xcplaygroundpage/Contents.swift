@@ -504,6 +504,27 @@ case .saturday: print("토요일")
 default: print("None")
 }
 
+/*:
+### unknown
+* 각 케이스에 매칭 되지 않는 경우
+*/
+
+enum Country {
+  case korea
+  case america
+}
+
+let country = Country.korea
+
+
+switch country {
+case .korea:
+  print("KOREA")
+case .america:
+  print("AMERICA")
+@unknown case _:
+  print("unknown")
+}
 
 
 
@@ -1544,6 +1565,30 @@ do {
 }
 
 
+print("\n-------------- [Pattern] --------------\n")
+
+/*:
+ 패턴 : 코드에서 어떤 패턴의 형태를 찾아내는 행위
+ 
+ 스위프트의 패턴은 크게 두 종류
+  1. 값을 추출하거나 무시하는 패턴
+      * 와일드 카드 패턴, 식별자 패턴, 값 바인딩 패턴, 튜플패턴
+  2. 패턴 매칭을 위한 패턴
+      * 열거형 케이스 패턴, 옵셔널 패턴, 표현 패턴, 타입캐스팅 패턴
+*/
+
+
+
+/*:
+ 와일드 카드 패턴
+*/
+
+let wildcardStr: String = "와일드카드"
+
+// _ : 어떤 값이 와도 상관없어서 항상 실행
+switch wildcardStr {
+case _: print(wildcardStr + "패턴" )
+}
 
 //: [Next](@next)
 
