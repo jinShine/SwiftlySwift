@@ -6,7 +6,7 @@
 
 **1Day**
 ---
-* 스위프트 문법 빠르게 훑어보기
+* 스위프트 문법 빠르게 훑어보기11
 * 참조자료
   -> [The Swift Language Guide (한국어)](https://jusung.gitbook.io/the-swift-language-guide/)
 
