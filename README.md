@@ -6,7 +6,7 @@
 
 **1Day**
 ---
-* 스위프트 문법 빠르게 훑어보기11
+* 스위프트 문법 빠르게 훑어보기
 * 참조자료
   -> [The Swift Language Guide (한국어)](https://jusung.gitbook.io/the-swift-language-guide/)
 
@@ -70,7 +70,7 @@
 * CocoaPods 설치 및 사용 방법
 * HTTP통신개념 및 Alamofire사용법
 
-**15Day~**
+**15Day**
 ---
 * Codable이란?
 * 통신 후 Data 디코딩 방법 학습
