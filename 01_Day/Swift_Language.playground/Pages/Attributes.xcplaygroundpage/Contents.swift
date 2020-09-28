@@ -4,6 +4,8 @@ import Foundation
 
 /*:
  ## propertyWrapper
+ 
+ * Swift 5.1부터 사용 가능
  */
 
 @propertyWrapper
