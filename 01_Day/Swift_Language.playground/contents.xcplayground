@@ -4,5 +4,6 @@
         <page name='Contents'/>
         <page name='The Basics'/>
         <page name='OOP'/>
+        <page name='Attributes'/>
     </pages>
 </playground>
