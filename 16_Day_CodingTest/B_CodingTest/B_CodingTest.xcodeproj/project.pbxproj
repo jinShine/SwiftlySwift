@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC2116572535E51400B90DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2116562535E51400B90DAC /* AppDelegate.swift */; };
+		EC2116592535E51400B90DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2116582535E51400B90DAC /* SceneDelegate.swift */; };
+		EC21165B2535E51400B90DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21165A2535E51400B90DAC /* ViewController.swift */; };
+		EC21165E2535E51400B90DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC21165C2535E51400B90DAC /* Main.storyboard */; };
+		EC2116602535E51500B90DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC21165F2535E51500B90DAC /* Assets.xcassets */; };
+		EC2116632535E51500B90DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2116612535E51500B90DAC /* LaunchScreen.storyboard */; };
+		EC21166E2535E51500B90DAC /* B_CodingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21166D2535E51500B90DAC /* B_CodingTestTests.swift */; };
+		EC2116792535E51500B90DAC /* B_CodingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2116782535E51500B90DAC /* B_CodingTestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC21166A2535E51500B90DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC21164B2535E51400B90DAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC2116522535E51400B90DAC;
+			remoteInfo = B_CodingTest;
+		};
+		EC2116752535E51500B90DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC21164B2535E51400B90DAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC2116522535E51400B90DAC;
+			remoteInfo = B_CodingTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC2116532535E51400B90DAC /* B_CodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = B_CodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2116562535E51400B90DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC2116582535E51400B90DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC21165A2535E51400B90DAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC21165D2535E51400B90DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC21165F2535E51500B90DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC2116622535E51500B90DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC2116642535E51500B90DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2116692535E51500B90DAC /* B_CodingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = B_CodingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC21166D2535E51500B90DAC /* B_CodingTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B_CodingTestTests.swift; sourceTree = "<group>"; };
+		EC21166F2535E51500B90DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2116742535E51500B90DAC /* B_CodingTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = B_CodingTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2116782535E51500B90DAC /* B_CodingTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B_CodingTestUITests.swift; sourceTree = "<group>"; };
+		EC21167A2535E51500B90DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC2116502535E51400B90DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2116662535E51500B90DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2116712535E51500B90DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC21164A2535E51400B90DAC = {
+			isa = PBXGroup;
+			children = (
+				EC2116552535E51400B90DAC /* B_CodingTest */,
+				EC21166C2535E51500B90DAC /* B_CodingTestTests */,
+				EC2116772535E51500B90DAC /* B_CodingTestUITests */,
+				EC2116542535E51400B90DAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC2116542535E51400B90DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC2116532535E51400B90DAC /* B_CodingTest.app */,
+				EC2116692535E51500B90DAC /* B_CodingTestTests.xctest */,
+				EC2116742535E51500B90DAC /* B_CodingTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC2116552535E51400B90DAC /* B_CodingTest */ = {
+			isa = PBXGroup;
+			children = (
+				EC2116562535E51400B90DAC /* AppDelegate.swift */,
+				EC2116582535E51400B90DAC /* SceneDelegate.swift */,
+				EC21165A2535E51400B90DAC /* ViewController.swift */,
+				EC21165C2535E51400B90DAC /* Main.storyboard */,
+				EC21165F2535E51500B90DAC /* Assets.xcassets */,
+				EC2116612535E51500B90DAC /* LaunchScreen.storyboard */,
+				EC2116642535E51500B90DAC /* Info.plist */,
+			);
+			path = B_CodingTest;
+			sourceTree = "<group>";
+		};
+		EC21166C2535E51500B90DAC /* B_CodingTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC21166D2535E51500B90DAC /* B_CodingTestTests.swift */,
+				EC21166F2535E51500B90DAC /* Info.plist */,
+			);
+			path = B_CodingTestTests;
+			sourceTree = "<group>";
+		};
+		EC2116772535E51500B90DAC /* B_CodingTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC2116782535E51500B90DAC /* B_CodingTestUITests.swift */,
+				EC21167A2535E51500B90DAC /* Info.plist */,
+			);
+			path = B_CodingTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC2116522535E51400B90DAC /* B_CodingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC21167D2535E51500B90DAC /* Build configuration list for PBXNativeTarget "B_CodingTest" */;
+			buildPhases = (
+				EC21164F2535E51400B90DAC /* Sources */,
+				EC2116502535E51400B90DAC /* Frameworks */,
+				EC2116512535E51400B90DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = B_CodingTest;
+			productName = B_CodingTest;
+			productReference = EC2116532535E51400B90DAC /* B_CodingTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC2116682535E51500B90DAC /* B_CodingTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2116802535E51500B90DAC /* Build configuration list for PBXNativeTarget "B_CodingTestTests" */;
+			buildPhases = (
+				EC2116652535E51500B90DAC /* Sources */,
+				EC2116662535E51500B90DAC /* Frameworks */,
+				EC2116672535E51500B90DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC21166B2535E51500B90DAC /* PBXTargetDependency */,
+			);
+			name = B_CodingTestTests;
+			productName = B_CodingTestTests;
+			productReference = EC2116692535E51500B90DAC /* B_CodingTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC2116732535E51500B90DAC /* B_CodingTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2116832535E51500B90DAC /* Build configuration list for PBXNativeTarget "B_CodingTestUITests" */;
+			buildPhases = (
+				EC2116702535E51500B90DAC /* Sources */,
+				EC2116712535E51500B90DAC /* Frameworks */,
+				EC2116722535E51500B90DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2116762535E51500B90DAC /* PBXTargetDependency */,
+			);
+			name = B_CodingTestUITests;
+			productName = B_CodingTestUITests;
+			productReference = EC2116742535E51500B90DAC /* B_CodingTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC21164B2535E51400B90DAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = jinnify;
+				TargetAttributes = {
+					EC2116522535E51400B90DAC = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					EC2116682535E51500B90DAC = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EC2116522535E51400B90DAC;
+					};
+					EC2116732535E51500B90DAC = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EC2116522535E51400B90DAC;
+					};
+				};
+			};
+			buildConfigurationList = EC21164E2535E51400B90DAC /* Build configuration list for PBXProject "B_CodingTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC21164A2535E51400B90DAC;
+			productRefGroup = EC2116542535E51400B90DAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC2116522535E51400B90DAC /* B_CodingTest */,
+				EC2116682535E51500B90DAC /* B_CodingTestTests */,
+				EC2116732535E51500B90DAC /* B_CodingTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC2116512535E51400B90DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2116632535E51500B90DAC /* LaunchScreen.storyboard in Resources */,
+				EC2116602535E51500B90DAC /* Assets.xcassets in Resources */,
+				EC21165E2535E51400B90DAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2116672535E51500B90DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2116722535E51500B90DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC21164F2535E51400B90DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC21165B2535E51400B90DAC /* ViewController.swift in Sources */,
+				EC2116572535E51400B90DAC /* AppDelegate.swift in Sources */,
+				EC2116592535E51400B90DAC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2116652535E51500B90DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC21166E2535E51500B90DAC /* B_CodingTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2116702535E51500B90DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2116792535E51500B90DAC /* B_CodingTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC21166B2535E51500B90DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC2116522535E51400B90DAC /* B_CodingTest */;
+			targetProxy = EC21166A2535E51500B90DAC /* PBXContainerItemProxy */;
+		};
+		EC2116762535E51500B90DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC2116522535E51400B90DAC /* B_CodingTest */;
+			targetProxy = EC2116752535E51500B90DAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC21165C2535E51400B90DAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC21165D2535E51400B90DAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC2116612535E51500B90DAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2116622535E51500B90DAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC21167B2535E51500B90DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC21167C2535E51500B90DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC21167E2535E51500B90DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNMQE42DQF;
+				INFOPLIST_FILE = B_CodingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnify.B-CodingTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC21167F2535E51500B90DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNMQE42DQF;
+				INFOPLIST_FILE = B_CodingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnify.B-CodingTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC2116812535E51500B90DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNMQE42DQF;
+				INFOPLIST_FILE = B_CodingTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnify.B-CodingTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/B_CodingTest.app/B_CodingTest";
+			};
+			name = Debug;
+		};
+		EC2116822535E51500B90DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNMQE42DQF;
+				INFOPLIST_FILE = B_CodingTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnify.B-CodingTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/B_CodingTest.app/B_CodingTest";
+			};
+			name = Release;
+		};
+		EC2116842535E51500B90DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNMQE42DQF;
+				INFOPLIST_FILE = B_CodingTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnify.B-CodingTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = B_CodingTest;
+			};
+			name = Debug;
+		};
+		EC2116852535E51500B90DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CNMQE42DQF;
+				INFOPLIST_FILE = B_CodingTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinnify.B-CodingTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = B_CodingTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC21164E2535E51400B90DAC /* Build configuration list for PBXProject "B_CodingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC21167B2535E51500B90DAC /* Debug */,
+				EC21167C2535E51500B90DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC21167D2535E51500B90DAC /* Build configuration list for PBXNativeTarget "B_CodingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC21167E2535E51500B90DAC /* Debug */,
+				EC21167F2535E51500B90DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2116802535E51500B90DAC /* Build configuration list for PBXNativeTarget "B_CodingTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2116812535E51500B90DAC /* Debug */,
+				EC2116822535E51500B90DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2116832535E51500B90DAC /* Build configuration list for PBXNativeTarget "B_CodingTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2116842535E51500B90DAC /* Debug */,
+				EC2116852535E51500B90DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC21164B2535E51400B90DAC /* Project object */;
+}
