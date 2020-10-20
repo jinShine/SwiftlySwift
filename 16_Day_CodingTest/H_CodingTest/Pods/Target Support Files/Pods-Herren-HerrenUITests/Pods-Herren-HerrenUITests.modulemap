@@ -1,0 +1,6 @@
+framework module Pods_Herren_HerrenUITests {
+  umbrella header "Pods-Herren-HerrenUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

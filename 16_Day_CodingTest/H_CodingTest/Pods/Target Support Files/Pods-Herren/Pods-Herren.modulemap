@@ -1,0 +1,6 @@
+framework module Pods_Herren {
+  umbrella header "Pods-Herren-umbrella.h"
+
+  export *
+  module * { export * }
+}
