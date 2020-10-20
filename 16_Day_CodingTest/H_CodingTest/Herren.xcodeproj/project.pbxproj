@@ -11,13 +11,18 @@
 		6D023FDBA330AC2EB51F6732 /* Pods_HerrenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A5B76B7787C95A05336DCB /* Pods_HerrenTests.framework */; };
 		C83A82276AA719F8A3133CDD /* Pods_Herren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13BD4E6C22116A21203C67C /* Pods_Herren.framework */; };
 		EC262EF3253F06DE00086FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262EF2253F06DE00086FBA /* AppDelegate.swift */; };
-		EC262EF7253F06DE00086FBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262EF6253F06DE00086FBA /* ViewController.swift */; };
 		EC262EFC253F06E100086FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC262EFB253F06E100086FBA /* Assets.xcassets */; };
 		EC262EFF253F06E100086FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC262EFD253F06E100086FBA /* LaunchScreen.storyboard */; };
 		EC262F0A253F06E100086FBA /* HerrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F09253F06E100086FBA /* HerrenTests.swift */; };
 		EC262F15253F06E100086FBA /* HerrenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F14253F06E100086FBA /* HerrenUITests.swift */; };
 		EC262F29253F0C0400086FBA /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F28253F0C0400086FBA /* AppDelegate+Setup.swift */; };
 		EC262F2B253F0CB100086FBA /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F2A253F0CB100086FBA /* Application.swift */; };
+		EC262F2E253F0EF200086FBA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F2D253F0EF200086FBA /* Navigator.swift */; };
+		EC262F32253F0FB500086FBA /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F31253F0FB500086FBA /* SceneType.swift */; };
+		EC262F35253F107200086FBA /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F34253F107200086FBA /* CustomerListViewController.swift */; };
+		EC262F37253F109A00086FBA /* CustomerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F36253F109A00086FBA /* CustomerListViewModel.swift */; };
+		EC262F3A253F10EF00086FBA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F39253F10EF00086FBA /* BaseViewController.swift */; };
+		EC262F3C253F134400086FBA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F3B253F134400086FBA /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +54,6 @@
 		DFB05ED293EC84AE8E367015 /* Pods-Herren-HerrenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herren-HerrenUITests.debug.xcconfig"; path = "Target Support Files/Pods-Herren-HerrenUITests/Pods-Herren-HerrenUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC262EEF253F06DE00086FBA /* Herren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Herren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC262EF2253F06DE00086FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC262EF6253F06DE00086FBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC262EFB253F06E100086FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC262EFE253F06E100086FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC262F00253F06E100086FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +65,12 @@
 		EC262F16253F06E100086FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC262F28253F0C0400086FBA /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		EC262F2A253F0CB100086FBA /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		EC262F2D253F0EF200086FBA /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		EC262F31253F0FB500086FBA /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
+		EC262F34253F107200086FBA /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
+		EC262F36253F109A00086FBA /* CustomerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewModel.swift; sourceTree = "<group>"; };
+		EC262F39253F10EF00086FBA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EC262F3B253F134400086FBA /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,7 @@
 				EC262F28253F0C0400086FBA /* AppDelegate+Setup.swift */,
 				EC262F23253F078400086FBA /* Core */,
 				EC262F22253F077700086FBA /* Scenes */,
+				EC262F38253F10DF00086FBA /* Common */,
 				EC262F24253F079400086FBA /* Resources */,
 				EC262F00253F06E100086FBA /* Info.plist */,
 			);
@@ -170,7 +181,7 @@
 		EC262F22253F077700086FBA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EC262EF6253F06DE00086FBA /* ViewController.swift */,
+				EC262F33253F102800086FBA /* Customer List */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				EC262F2A253F0CB100086FBA /* Application.swift */,
+				EC262F2C253F0EDE00086FBA /* Navigator */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -190,6 +202,33 @@
 				EC262EFB253F06E100086FBA /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC262F2C253F0EDE00086FBA /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F2D253F0EF200086FBA /* Navigator.swift */,
+				EC262F31253F0FB500086FBA /* SceneType.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		EC262F33253F102800086FBA /* Customer List */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F34253F107200086FBA /* CustomerListViewController.swift */,
+				EC262F36253F109A00086FBA /* CustomerListViewModel.swift */,
+			);
+			path = "Customer List";
+			sourceTree = "<group>";
+		};
+		EC262F38253F10DF00086FBA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F39253F10EF00086FBA /* BaseViewController.swift */,
+				EC262F3B253F134400086FBA /* BaseNavigationController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,9 +469,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC262F37253F109A00086FBA /* CustomerListViewModel.swift in Sources */,
+				EC262F32253F0FB500086FBA /* SceneType.swift in Sources */,
 				EC262F2B253F0CB100086FBA /* Application.swift in Sources */,
-				EC262EF7253F06DE00086FBA /* ViewController.swift in Sources */,
+				EC262F2E253F0EF200086FBA /* Navigator.swift in Sources */,
+				EC262F3A253F10EF00086FBA /* BaseViewController.swift in Sources */,
+				EC262F3C253F134400086FBA /* BaseNavigationController.swift in Sources */,
 				EC262EF3253F06DE00086FBA /* AppDelegate.swift in Sources */,
+				EC262F35253F107200086FBA /* CustomerListViewController.swift in Sources */,
 				EC262F29253F0C0400086FBA /* AppDelegate+Setup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

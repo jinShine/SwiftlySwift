@@ -12,15 +12,16 @@ import UIKit
 final class Application: NSObject {
 
   var window: UIWindow?
+  var navigator: Navigator
   
   private override init() {
-    
+    self.navigator = Navigator.defaults
   }
   
   func presentInitialScreen(in window: UIWindow?) {
     guard let window = window else { return }
     self.window = window
-    window.rootViewController = ViewController()
+    window.rootViewController = self.navigator.navigate(to: .customerList)
     window.backgroundColor = UIColor.white
     window.makeKeyAndVisible()
   }
