@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		EC262EFF253F06E100086FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC262EFD253F06E100086FBA /* LaunchScreen.storyboard */; };
 		EC262F0A253F06E100086FBA /* HerrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F09253F06E100086FBA /* HerrenTests.swift */; };
 		EC262F15253F06E100086FBA /* HerrenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F14253F06E100086FBA /* HerrenUITests.swift */; };
+		EC262F29253F0C0400086FBA /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F28253F0C0400086FBA /* AppDelegate+Setup.swift */; };
+		EC262F2B253F0CB100086FBA /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F2A253F0CB100086FBA /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		EC262F10253F06E100086FBA /* HerrenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HerrenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC262F14253F06E100086FBA /* HerrenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerrenUITests.swift; sourceTree = "<group>"; };
 		EC262F16253F06E100086FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC262F28253F0C0400086FBA /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
+		EC262F2A253F0CB100086FBA /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,6 @@
 				3F0277DACD3C7F3B5F47DAD0 /* Pods-HerrenTests.debug.xcconfig */,
 				A9CC41065FF5043B88ED994A /* Pods-HerrenTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,6 +139,8 @@
 		EC262EF1253F06DE00086FBA /* Herren */ = {
 			isa = PBXGroup;
 			children = (
+				EC262EF2253F06DE00086FBA /* AppDelegate.swift */,
+				EC262F28253F0C0400086FBA /* AppDelegate+Setup.swift */,
 				EC262F23253F078400086FBA /* Core */,
 				EC262F22253F077700086FBA /* Scenes */,
 				EC262F24253F079400086FBA /* Resources */,
@@ -173,7 +178,7 @@
 		EC262F23253F078400086FBA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EC262EF2253F06DE00086FBA /* AppDelegate.swift */,
+				EC262F2A253F0CB100086FBA /* Application.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -425,8 +430,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC262F2B253F0CB100086FBA /* Application.swift in Sources */,
 				EC262EF7253F06DE00086FBA /* ViewController.swift in Sources */,
 				EC262EF3253F06DE00086FBA /* AppDelegate.swift in Sources */,
+				EC262F29253F0C0400086FBA /* AppDelegate+Setup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
