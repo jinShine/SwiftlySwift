@@ -16,6 +16,16 @@ class BaseViewController: UIViewController {
 
   //MARK: - Properties
   
+  var prefersLargeTitles: Bool = false {
+    didSet {
+      guard let navigationBar = self.navigationController?.navigationBar else {
+        return
+      }
+
+      navigationBar.prefersLargeTitles = prefersLargeTitles
+    }
+  }
+  
 
   //MARK: - Initialize
   
