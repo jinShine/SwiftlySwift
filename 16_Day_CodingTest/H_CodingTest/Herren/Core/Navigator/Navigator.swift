@@ -14,7 +14,7 @@ final class Navigator: NSObject {
   func navigate(to scene: Scene) -> UIViewController {
     switch scene {
     case .customerList:
-      let viewModel = CustomerListViewModel()
+      let viewModel = CustomerListViewModel(customerInteractor: CustomerInteractor())
       let viewController = CustomerListViewController(viewModel: viewModel, navigator: self)
       return BaseNavigationController(rootViewController: viewController)
     }

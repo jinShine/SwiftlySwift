@@ -1,5 +1,5 @@
 //
-//  BaseNavigationController.swift
+//  Application+Theme.swift
 //  Herren
 //
 //  Created by Buzz.Kim on 2020/10/20.
@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
-class BaseNavigationController: UINavigationController {
+extension Application {
   
+  static let image = Image()
+  static let color = Color()
+  static let font = Font()
 }

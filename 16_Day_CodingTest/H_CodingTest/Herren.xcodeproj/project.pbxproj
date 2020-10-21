@@ -23,6 +23,27 @@
 		EC262F37253F109A00086FBA /* CustomerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F36253F109A00086FBA /* CustomerListViewModel.swift */; };
 		EC262F3A253F10EF00086FBA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F39253F10EF00086FBA /* BaseViewController.swift */; };
 		EC262F3C253F134400086FBA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F3B253F134400086FBA /* BaseNavigationController.swift */; };
+		EC262F3F253F17D000086FBA /* Application+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F3E253F17CF00086FBA /* Application+Theme.swift */; };
+		EC262F43253F183100086FBA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F42253F183100086FBA /* Color.swift */; };
+		EC262F45253F186500086FBA /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F44253F186500086FBA /* Image.swift */; };
+		EC262F47253F251500086FBA /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F46253F251500086FBA /* Font.swift */; };
+		EC262F4B253F287B00086FBA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F4A253F287B00086FBA /* UIColor+Extension.swift */; };
+		EC262F4F253F346A00086FBA /* CustomerListViewController+TableViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F4E253F346A00086FBA /* CustomerListViewController+TableViewDecorator.swift */; };
+		EC262F51253F352100086FBA /* TableViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F50253F352100086FBA /* TableViewDecorator.swift */; };
+		EC262F54253F378B00086FBA /* CustomerInfomationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F53253F378B00086FBA /* CustomerInfomationCell.swift */; };
+		EC262F56253F3A4C00086FBA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F55253F3A4C00086FBA /* UIView+Extension.swift */; };
+		EC262F58253F3C3100086FBA /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F57253F3C3100086FBA /* CALayer+Extension.swift */; };
+		EC262F5E253F400000086FBA /* CaptionMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F5D253F400000086FBA /* CaptionMemoView.swift */; };
+		EC262F61253F448600086FBA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F60253F448600086FBA /* NetworkService.swift */; };
+		EC262F63253F44B100086FBA /* HerrenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F62253F44B100086FBA /* HerrenRouter.swift */; };
+		EC262F65253F451F00086FBA /* HerrenRouter+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F64253F451F00086FBA /* HerrenRouter+TargetType.swift */; };
+		EC262F67253F470700086FBA /* NetworkDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F66253F470700086FBA /* NetworkDataResponse.swift */; };
+		EC262F69253F471C00086FBA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F68253F471C00086FBA /* NetworkError.swift */; };
+		EC262F6B253F47F000086FBA /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F6A253F47F000086FBA /* Data+Decode.swift */; };
+		EC262F72253F4AB300086FBA /* CustomerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F71253F4AB300086FBA /* CustomerInteractor.swift */; };
+		EC262F74253F4B8100086FBA /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F73253F4B8100086FBA /* Customer.swift */; };
+		ECF0F3D72540701C00CBE100 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F3D62540701C00CBE100 /* UIViewController+Extension.swift */; };
+		ECF0F3D92540980000CBE100 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F3D82540980000CBE100 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +92,27 @@
 		EC262F36253F109A00086FBA /* CustomerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewModel.swift; sourceTree = "<group>"; };
 		EC262F39253F10EF00086FBA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EC262F3B253F134400086FBA /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		EC262F3E253F17CF00086FBA /* Application+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Theme.swift"; sourceTree = "<group>"; };
+		EC262F42253F183100086FBA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EC262F44253F186500086FBA /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		EC262F46253F251500086FBA /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		EC262F4A253F287B00086FBA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		EC262F4E253F346A00086FBA /* CustomerListViewController+TableViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomerListViewController+TableViewDecorator.swift"; sourceTree = "<group>"; };
+		EC262F50253F352100086FBA /* TableViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDecorator.swift; sourceTree = "<group>"; };
+		EC262F53253F378B00086FBA /* CustomerInfomationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfomationCell.swift; sourceTree = "<group>"; };
+		EC262F55253F3A4C00086FBA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		EC262F57253F3C3100086FBA /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		EC262F5D253F400000086FBA /* CaptionMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionMemoView.swift; sourceTree = "<group>"; };
+		EC262F60253F448600086FBA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EC262F62253F44B100086FBA /* HerrenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerrenRouter.swift; sourceTree = "<group>"; };
+		EC262F64253F451F00086FBA /* HerrenRouter+TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HerrenRouter+TargetType.swift"; sourceTree = "<group>"; };
+		EC262F66253F470700086FBA /* NetworkDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataResponse.swift; sourceTree = "<group>"; };
+		EC262F68253F471C00086FBA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EC262F6A253F47F000086FBA /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
+		EC262F71253F4AB300086FBA /* CustomerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInteractor.swift; sourceTree = "<group>"; };
+		EC262F73253F4B8100086FBA /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		ECF0F3D62540701C00CBE100 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		ECF0F3D82540980000CBE100 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +194,9 @@
 				EC262EF2253F06DE00086FBA /* AppDelegate.swift */,
 				EC262F28253F0C0400086FBA /* AppDelegate+Setup.swift */,
 				EC262F23253F078400086FBA /* Core */,
-				EC262F22253F077700086FBA /* Scenes */,
+				EC262F22253F077700086FBA /* Modules */,
 				EC262F38253F10DF00086FBA /* Common */,
+				EC262F41253F181400086FBA /* Utilities */,
 				EC262F24253F079400086FBA /* Resources */,
 				EC262F00253F06E100086FBA /* Info.plist */,
 			);
@@ -178,19 +221,22 @@
 			path = HerrenUITests;
 			sourceTree = "<group>";
 		};
-		EC262F22253F077700086FBA /* Scenes */ = {
+		EC262F22253F077700086FBA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EC262F33253F102800086FBA /* Customer List */,
+				EC262F6C253F4A6800086FBA /* Scene */,
+				EC262F6D253F4A7700086FBA /* Interactor */,
+				EC262F6E253F4A8500086FBA /* Model */,
 			);
-			path = Scenes;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		EC262F23253F078400086FBA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EC262F2A253F0CB100086FBA /* Application.swift */,
+				EC262F40253F17D900086FBA /* Application */,
 				EC262F2C253F0EDE00086FBA /* Navigator */,
+				EC262F5F253F447200086FBA /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -216,8 +262,10 @@
 		EC262F33253F102800086FBA /* Customer List */ = {
 			isa = PBXGroup;
 			children = (
+				EC262F52253F377B00086FBA /* Cells */,
 				EC262F34253F107200086FBA /* CustomerListViewController.swift */,
 				EC262F36253F109A00086FBA /* CustomerListViewModel.swift */,
+				EC262F4E253F346A00086FBA /* CustomerListViewController+TableViewDecorator.swift */,
 			);
 			path = "Customer List";
 			sourceTree = "<group>";
@@ -225,10 +273,113 @@
 		EC262F38253F10DF00086FBA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				EC262F39253F10EF00086FBA /* BaseViewController.swift */,
-				EC262F3B253F134400086FBA /* BaseNavigationController.swift */,
+				EC262F59253F3FC600086FBA /* Base */,
+				EC262F5A253F3FC900086FBA /* View */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		EC262F40253F17D900086FBA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F2A253F0CB100086FBA /* Application.swift */,
+				EC262F3E253F17CF00086FBA /* Application+Theme.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EC262F41253F181400086FBA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F49253F286500086FBA /* AppTheme */,
+				EC262F48253F285F00086FBA /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EC262F48253F285F00086FBA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F4A253F287B00086FBA /* UIColor+Extension.swift */,
+				EC262F55253F3A4C00086FBA /* UIView+Extension.swift */,
+				EC262F57253F3C3100086FBA /* CALayer+Extension.swift */,
+				EC262F6A253F47F000086FBA /* Data+Decode.swift */,
+				ECF0F3D62540701C00CBE100 /* UIViewController+Extension.swift */,
+				ECF0F3D82540980000CBE100 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EC262F49253F286500086FBA /* AppTheme */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F42253F183100086FBA /* Color.swift */,
+				EC262F44253F186500086FBA /* Image.swift */,
+				EC262F46253F251500086FBA /* Font.swift */,
+			);
+			path = AppTheme;
+			sourceTree = "<group>";
+		};
+		EC262F52253F377B00086FBA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F53253F378B00086FBA /* CustomerInfomationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EC262F59253F3FC600086FBA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F39253F10EF00086FBA /* BaseViewController.swift */,
+				EC262F3B253F134400086FBA /* BaseNavigationController.swift */,
+				EC262F50253F352100086FBA /* TableViewDecorator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EC262F5A253F3FC900086FBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F5D253F400000086FBA /* CaptionMemoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC262F5F253F447200086FBA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F60253F448600086FBA /* NetworkService.swift */,
+				EC262F62253F44B100086FBA /* HerrenRouter.swift */,
+				EC262F64253F451F00086FBA /* HerrenRouter+TargetType.swift */,
+				EC262F66253F470700086FBA /* NetworkDataResponse.swift */,
+				EC262F68253F471C00086FBA /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC262F6C253F4A6800086FBA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F33253F102800086FBA /* Customer List */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EC262F6D253F4A7700086FBA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F71253F4AB300086FBA /* CustomerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EC262F6E253F4A8500086FBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC262F73253F4B8100086FBA /* Customer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,15 +620,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC262F65253F451F00086FBA /* HerrenRouter+TargetType.swift in Sources */,
 				EC262F37253F109A00086FBA /* CustomerListViewModel.swift in Sources */,
+				EC262F45253F186500086FBA /* Image.swift in Sources */,
 				EC262F32253F0FB500086FBA /* SceneType.swift in Sources */,
+				ECF0F3D72540701C00CBE100 /* UIViewController+Extension.swift in Sources */,
+				EC262F43253F183100086FBA /* Color.swift in Sources */,
+				EC262F3F253F17D000086FBA /* Application+Theme.swift in Sources */,
 				EC262F2B253F0CB100086FBA /* Application.swift in Sources */,
+				EC262F58253F3C3100086FBA /* CALayer+Extension.swift in Sources */,
+				EC262F4F253F346A00086FBA /* CustomerListViewController+TableViewDecorator.swift in Sources */,
 				EC262F2E253F0EF200086FBA /* Navigator.swift in Sources */,
+				EC262F4B253F287B00086FBA /* UIColor+Extension.swift in Sources */,
+				EC262F54253F378B00086FBA /* CustomerInfomationCell.swift in Sources */,
+				EC262F51253F352100086FBA /* TableViewDecorator.swift in Sources */,
+				EC262F47253F251500086FBA /* Font.swift in Sources */,
+				EC262F61253F448600086FBA /* NetworkService.swift in Sources */,
+				EC262F74253F4B8100086FBA /* Customer.swift in Sources */,
+				EC262F67253F470700086FBA /* NetworkDataResponse.swift in Sources */,
+				EC262F63253F44B100086FBA /* HerrenRouter.swift in Sources */,
+				EC262F56253F3A4C00086FBA /* UIView+Extension.swift in Sources */,
+				EC262F72253F4AB300086FBA /* CustomerInteractor.swift in Sources */,
 				EC262F3A253F10EF00086FBA /* BaseViewController.swift in Sources */,
+				EC262F69253F471C00086FBA /* NetworkError.swift in Sources */,
 				EC262F3C253F134400086FBA /* BaseNavigationController.swift in Sources */,
+				EC262F6B253F47F000086FBA /* Data+Decode.swift in Sources */,
 				EC262EF3253F06DE00086FBA /* AppDelegate.swift in Sources */,
 				EC262F35253F107200086FBA /* CustomerListViewController.swift in Sources */,
 				EC262F29253F0C0400086FBA /* AppDelegate+Setup.swift in Sources */,
+				ECF0F3D92540980000CBE100 /* String+Extension.swift in Sources */,
+				EC262F5E253F400000086FBA /* CaptionMemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
