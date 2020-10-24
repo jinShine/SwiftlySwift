@@ -34,7 +34,6 @@ class CustomerListViewController: BaseViewController {
     tableView.estimatedRowHeight = 110
     tableView.dataSource = self
     tableView.delegate = self
-    tableView.prefetchDataSource = self
     tableView.separatorStyle = .none
     tableView.showsVerticalScrollIndicator = false
     
@@ -50,7 +49,6 @@ class CustomerListViewController: BaseViewController {
   
   var viewModel: CustomerListViewModelAdaptor
   var navigator: Navigator
-  
   
   //MARK: - Initialize
   
