@@ -17,7 +17,7 @@ public class CustomerInfomationCell: UITableViewCell {
   struct UI {
     static let profileSize: CGSize = CGSize(width: 60, height: 60)
   }
-
+  
   // MARK: - UI Properties
   
   let containerView: UIView = {
@@ -61,7 +61,16 @@ public class CustomerInfomationCell: UITableViewCell {
     return label
   }()
   
-  let memoView: CaptionMemoView = CaptionMemoView()
+  let memoLabel: PaddingLabel = {
+    let label = PaddingLabel(withInsets: 8, 8, 8, 8)
+    label.font = Application.font.appleSDGothicNeoRegular(size: 12)
+    label.textColor = Application.color.caption
+    label.numberOfLines = 0
+    label.backgroundColor = Application.color.lightWhite
+    label.layer.cornerRadius = 6
+    label.layer.masksToBounds = true
+    return label
+  }()
   
   //MARK: - Initialize
   
@@ -89,7 +98,7 @@ public class CustomerInfomationCell: UITableViewCell {
     contentView.backgroundColor = .clear
     
     [containerView].forEach { contentView.addSubview($0) }
-    [profileImageView, nameLabel, contactLabel, birthLabel, memoView].forEach {
+    [profileImageView, nameLabel, contactLabel, birthLabel, memoLabel].forEach {
       containerView.addSubview($0)
     }
   }
@@ -103,7 +112,6 @@ public class CustomerInfomationCell: UITableViewCell {
       $0.bottom.equalToSuperview().offset(-10)
     }
     
-    profileImageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
     profileImageView.snp.makeConstraints {
       $0.top.leading.equalToSuperview().offset(15)
       $0.size.equalTo(UI.profileSize.width)
@@ -112,17 +120,25 @@ public class CustomerInfomationCell: UITableViewCell {
     nameLabel.snp.makeConstraints {
       $0.top.equalTo(profileImageView.snp.top).offset(11)
       $0.leading.equalTo(profileImageView.snp.trailing).offset(15)
-      $0.trailing.equalToSuperview().offset(-15)
+      $0.trailing.greaterThanOrEqualToSuperview().offset(-15)
     }
     
     contactLabel.snp.makeConstraints {
       $0.top.equalTo(nameLabel.snp.bottom).offset(4)
-      $0.leading.equalTo(nameLabel)
+      $0.leading.equalTo(nameLabel.snp.leading)
     }
     
+    birthLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
     birthLabel.snp.makeConstraints {
       $0.centerY.equalTo(contactLabel)
       $0.leading.equalTo(contactLabel.snp.trailing).offset(15)
+      $0.trailing.greaterThanOrEqualToSuperview().offset(-15)
+    }
+    
+    memoLabel.snp.makeConstraints {
+      $0.top.equalTo(profileImageView.snp.bottom).offset(10)
+      $0.bottom.equalToSuperview().offset(-15)
+      $0.leading.equalToSuperview().offset(15)
       $0.trailing.equalToSuperview().offset(-15)
     }
     
@@ -145,25 +161,22 @@ public class CustomerInfomationCell: UITableViewCell {
     }
     
     self.birthLabel.text = item.birth
-    self.memoView.text = item.memo
+    self.memoLabel.text = item.memo
     updateMemoViewConstraints(by: item.memo.isEmpty)
   }
   
   private func updateMemoViewConstraints(by isEmpty: Bool) {
-    memoView.isHidden = isEmpty
+    memoLabel.isHidden = isEmpty
     
     if isEmpty {
-      memoView.snp.remakeConstraints {
-        $0.top.equalTo(profileImageView.snp.bottom).offset(15)
+      memoLabel.snp.updateConstraints {
+        $0.top.equalTo(profileImageView.snp.bottom)
         $0.bottom.equalToSuperview()
-        $0.height.equalTo(0)
       }
     } else {
-      memoView.snp.remakeConstraints {
+      memoLabel.snp.updateConstraints {
         $0.top.equalTo(profileImageView.snp.bottom).offset(10)
-        $0.leading.equalTo(profileImageView)
-        $0.trailing.equalTo(birthLabel)
-        $0.bottom.equalToSuperview().offset(-15)
+        $0.bottom.equalToSuperview().offset(-5)
       }
     }
   }

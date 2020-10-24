@@ -30,8 +30,11 @@ class CustomerListViewController: BaseViewController {
   
   lazy var tableView: UITableView = {
     let tableView = UITableView()
+    tableView.rowHeight = UITableView.automaticDimension
+    tableView.estimatedRowHeight = 110
     tableView.dataSource = self
     tableView.delegate = self
+    tableView.prefetchDataSource = self
     tableView.separatorStyle = .none
     tableView.showsVerticalScrollIndicator = false
     
@@ -185,7 +188,7 @@ extension CustomerListViewController: UISearchBarDelegate {
       viewModel.isSearching = false
     } else {
       viewModel.isSearching = true
-
+      
       viewModel.filteredList = viewModel.customerList.filter {
         return $0.name.range(of: searchText, options: .caseInsensitive) != nil ||
           $0.contact.range(of: searchText, options: .caseInsensitive) != nil

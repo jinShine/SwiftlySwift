@@ -10,10 +10,10 @@ import UIKit
 import SnapKit
 
 class BaseViewController: UIViewController {
-
+  
   //MARK: - UI Properties
-
-
+  
+  
   //MARK: - Properties
   
   var prefersLargeTitles: Bool = false {
@@ -21,12 +21,12 @@ class BaseViewController: UIViewController {
       guard let navigationBar = self.navigationController?.navigationBar else {
         return
       }
-
+      
       navigationBar.prefersLargeTitles = prefersLargeTitles
     }
   }
   
-
+  
   //MARK: - Initialize
   
   init() {

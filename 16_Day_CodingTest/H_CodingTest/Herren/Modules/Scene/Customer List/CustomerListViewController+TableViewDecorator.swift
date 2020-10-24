@@ -54,6 +54,17 @@ extension CustomerListViewController: UITableViewDelegate {
   
 }
 
+extension CustomerListViewController: UITableViewDataSourcePrefetching {
+  func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+    print(indexPaths)
+  }
+  
+  func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+    
+  }
+  
+}
+
 // MARK: - Tableview decorator
 
 extension CustomerListViewController: TableViewDecorator {

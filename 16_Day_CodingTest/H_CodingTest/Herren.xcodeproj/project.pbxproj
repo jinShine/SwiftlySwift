@@ -33,7 +33,6 @@
 		EC262F54253F378B00086FBA /* CustomerInfomationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F53253F378B00086FBA /* CustomerInfomationCell.swift */; };
 		EC262F56253F3A4C00086FBA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F55253F3A4C00086FBA /* UIView+Extension.swift */; };
 		EC262F58253F3C3100086FBA /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F57253F3C3100086FBA /* CALayer+Extension.swift */; };
-		EC262F5E253F400000086FBA /* CaptionMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F5D253F400000086FBA /* CaptionMemoView.swift */; };
 		EC262F61253F448600086FBA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F60253F448600086FBA /* NetworkService.swift */; };
 		EC262F63253F44B100086FBA /* HerrenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F62253F44B100086FBA /* HerrenRouter.swift */; };
 		EC262F65253F451F00086FBA /* HerrenRouter+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F64253F451F00086FBA /* HerrenRouter+TargetType.swift */; };
@@ -44,6 +43,7 @@
 		EC262F74253F4B8100086FBA /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC262F73253F4B8100086FBA /* Customer.swift */; };
 		ECF0F3D72540701C00CBE100 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F3D62540701C00CBE100 /* UIViewController+Extension.swift */; };
 		ECF0F3D92540980000CBE100 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F3D82540980000CBE100 /* String+Extension.swift */; };
+		ECF0F4142543E6AC00CBE100 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F4132543E6AC00CBE100 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +102,6 @@
 		EC262F53253F378B00086FBA /* CustomerInfomationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfomationCell.swift; sourceTree = "<group>"; };
 		EC262F55253F3A4C00086FBA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EC262F57253F3C3100086FBA /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
-		EC262F5D253F400000086FBA /* CaptionMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionMemoView.swift; sourceTree = "<group>"; };
 		EC262F60253F448600086FBA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EC262F62253F44B100086FBA /* HerrenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerrenRouter.swift; sourceTree = "<group>"; };
 		EC262F64253F451F00086FBA /* HerrenRouter+TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HerrenRouter+TargetType.swift"; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		EC262F73253F4B8100086FBA /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		ECF0F3D62540701C00CBE100 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		ECF0F3D82540980000CBE100 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		ECF0F4132543E6AC00CBE100 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,7 +341,7 @@
 		EC262F5A253F3FC900086FBA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EC262F5D253F400000086FBA /* CaptionMemoView.swift */,
+				ECF0F4132543E6AC00CBE100 /* PaddingLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +636,7 @@
 				EC262F51253F352100086FBA /* TableViewDecorator.swift in Sources */,
 				EC262F47253F251500086FBA /* Font.swift in Sources */,
 				EC262F61253F448600086FBA /* NetworkService.swift in Sources */,
+				ECF0F4142543E6AC00CBE100 /* PaddingLabel.swift in Sources */,
 				EC262F74253F4B8100086FBA /* Customer.swift in Sources */,
 				EC262F67253F470700086FBA /* NetworkDataResponse.swift in Sources */,
 				EC262F63253F44B100086FBA /* HerrenRouter.swift in Sources */,
@@ -649,7 +650,6 @@
 				EC262F35253F107200086FBA /* CustomerListViewController.swift in Sources */,
 				EC262F29253F0C0400086FBA /* AppDelegate+Setup.swift in Sources */,
 				ECF0F3D92540980000CBE100 /* String+Extension.swift in Sources */,
-				EC262F5E253F400000086FBA /* CaptionMemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
