@@ -10,11 +10,19 @@ import UIKit
 
 protocol AlphabetListViewModelAdaptor {
   
+  func numberOfSections() -> Int
+  func numberOfRowsInSection(section: Int) -> Int
 }
 
 class AlphabetListViewModel: AlphabetListViewModelAdaptor {
   
-  //MARK: - Cell Type
+  //MARK: - Section Type
+  
+  enum SectionType: Int {
+    case selectedAlphabetList,
+    alphabetList,
+    total
+  }
   
   //MARK: - Properties
   
@@ -27,7 +35,17 @@ class AlphabetListViewModel: AlphabetListViewModelAdaptor {
   //MARK: - Methods
   
   //MARK:- data source
+
+  func numberOfSections() -> Int {
+    return SectionType.total.rawValue
+  }
   
+  func numberOfRowsInSection(section: Int) -> Int {
+    switch SectionType(rawValue: section) {
+    default:
+      return 1
+    }
+  }
   
 }
 

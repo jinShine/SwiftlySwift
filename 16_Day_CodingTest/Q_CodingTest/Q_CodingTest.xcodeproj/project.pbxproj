@@ -18,6 +18,9 @@
 		ECCA49E9254F0104000407CE /* AlphabetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49E8254F0104000407CE /* AlphabetListViewController.swift */; };
 		ECCA49EB254F010B000407CE /* AlphabetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49EA254F010B000407CE /* AlphabetListViewModel.swift */; };
 		ECCA49F0254F023E000407CE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49EF254F023E000407CE /* BaseViewController.swift */; };
+		ECCA49F2254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49F1254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift */; };
+		ECCA49F4254F03B7000407CE /* TableViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49F3254F03B7000407CE /* TableViewDecorator.swift */; };
+		ECCA49F6254F03D3000407CE /* CollectionViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49F5254F03D3000407CE /* CollectionViewDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		ECCA49E8254F0104000407CE /* AlphabetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetListViewController.swift; sourceTree = "<group>"; };
 		ECCA49EA254F010B000407CE /* AlphabetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetListViewModel.swift; sourceTree = "<group>"; };
 		ECCA49EF254F023E000407CE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ECCA49F1254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlphabetListViewController+TableViewDecorator.swift"; sourceTree = "<group>"; };
+		ECCA49F3254F03B7000407CE /* TableViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDecorator.swift; sourceTree = "<group>"; };
+		ECCA49F5254F03D3000407CE /* CollectionViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 			children = (
 				ECCA49E8254F0104000407CE /* AlphabetListViewController.swift */,
 				ECCA49EA254F010B000407CE /* AlphabetListViewModel.swift */,
+				ECCA49F1254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -163,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				ECCA49EF254F023E000407CE /* BaseViewController.swift */,
+				ECCA49F3254F03B7000407CE /* TableViewDecorator.swift */,
+				ECCA49F5254F03D3000407CE /* CollectionViewDecorator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -288,7 +297,10 @@
 				ECCA49E0254F0042000407CE /* Navigator.swift in Sources */,
 				ECCA49F0254F023E000407CE /* BaseViewController.swift in Sources */,
 				ECCA49C5254EFEC3000407CE /* AppDelegate.swift in Sources */,
+				ECCA49F4254F03B7000407CE /* TableViewDecorator.swift in Sources */,
 				ECCA49D9254F0009000407CE /* AppDelegate+Setup.swift in Sources */,
+				ECCA49F2254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift in Sources */,
+				ECCA49F6254F03D3000407CE /* CollectionViewDecorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,18 @@ class AlphabetListViewController: BaseViewController {
   
   //MARK: - UI Properties
   
+  lazy var tableView: UITableView = {
+    let tableView = UITableView()
+    tableView.rowHeight = UITableView.automaticDimension
+    tableView.estimatedRowHeight = 80
+    tableView.dataSource = self
+    tableView.delegate = self
+    tableView.separatorStyle = .none
+    tableView.showsVerticalScrollIndicator = false
+
+    return tableView
+  }()
+  
   //MARK: - Properties
   
   var viewModel: AlphabetListViewModelAdaptor
