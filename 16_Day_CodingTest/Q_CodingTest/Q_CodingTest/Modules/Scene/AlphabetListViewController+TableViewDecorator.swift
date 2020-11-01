@@ -31,13 +31,15 @@ extension AlphabetListViewController: UITableViewDataSource {
 extension AlphabetListViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//    switch CustomerListViewModel.SectionType(rawValue: indexPath.section) {
-//    case .customerInfo:
-//      return UITableView.automaticDimension
-//    default:
-//      return .zero
-//    }
-    return .zero
+    switch AlphabetListViewModel.SectionType(rawValue: indexPath.section) {
+    case .selectedAlphabetList:
+      let height = ((view.bounds.width - (App.basicLine * 2)) / UI.collectionViewColumn) * 2
+      return height
+    case .alphabetList:
+      return 100
+    default:
+      return .zero
+    }
   }
 }
 
@@ -46,6 +48,22 @@ extension AlphabetListViewController: UITableViewDelegate {
 extension AlphabetListViewController: TableViewDecorator {
   
   func configureCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+    switch AlphabetListViewModel.SectionType(rawValue: indexPath.section) {
+    case .selectedAlphabetList:
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: SelectedAlphabetListTableViewCell.reuseIdentifier, for: indexPath
+        ) as? SelectedAlphabetListTableViewCell else { return UITableViewCell() }
+
+      return cell
+    case .alphabetList:
+//      guard let cell = tableView.dequeueReusableCell(
+//        withIdentifier: SelectedAlphabetListTableViewCell.reuseIdentifier, for: indexPath
+//        ) as? SelectedAlphabetListTableViewCell else { return UITableViewCell() }
+//
+//      return cell
+      return UITableViewCell()
+    default:
+      return UITableViewCell()
+    }
   }
 }

@@ -18,7 +18,7 @@ class AlphabetListViewController: BaseViewController {
   }
   
   struct UI {
-    
+    static let collectionViewColumn: CGFloat = 3
   }
   
   //MARK: - UI Properties
@@ -31,6 +31,11 @@ class AlphabetListViewController: BaseViewController {
     tableView.delegate = self
     tableView.separatorStyle = .none
     tableView.showsVerticalScrollIndicator = false
+    
+    tableView.register(
+      SelectedAlphabetListTableViewCell.self,
+      forCellReuseIdentifier: SelectedAlphabetListTableViewCell.reuseIdentifier
+    )
 
     return tableView
   }()
@@ -65,10 +70,17 @@ class AlphabetListViewController: BaseViewController {
   override func setupUI() {
     super.setupUI()
     
+    [tableView].forEach {
+      self.view.addSubview($0)
+    }
   }
   
   override func setupConstraints() {
     super.setupConstraints()
+    
+    tableView.snp.makeConstraints {
+      $0.edges.equalToSuperview()
+    }
     
   }
   

@@ -12,7 +12,6 @@
 		ECCA49CE254EFEC6000407CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCA49CD254EFEC6000407CE /* Assets.xcassets */; };
 		ECCA49D1254EFEC6000407CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCA49CF254EFEC6000407CE /* LaunchScreen.storyboard */; };
 		ECCA49D9254F0009000407CE /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49D8254F0009000407CE /* AppDelegate+Setup.swift */; };
-		ECCA49DD254F002A000407CE /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49DC254F002A000407CE /* Application.swift */; };
 		ECCA49E0254F0042000407CE /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49DF254F0042000407CE /* Navigator.swift */; };
 		ECCA49E3254F0054000407CE /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49E2254F0054000407CE /* SceneType.swift */; };
 		ECCA49E9254F0104000407CE /* AlphabetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49E8254F0104000407CE /* AlphabetListViewController.swift */; };
@@ -21,6 +20,12 @@
 		ECCA49F2254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49F1254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift */; };
 		ECCA49F4254F03B7000407CE /* TableViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49F3254F03B7000407CE /* TableViewDecorator.swift */; };
 		ECCA49F6254F03D3000407CE /* CollectionViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49F5254F03D3000407CE /* CollectionViewDecorator.swift */; };
+		ECCA49FA254F06A8000407CE /* SelectedAlphabetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49F9254F06A8000407CE /* SelectedAlphabetListTableViewCell.swift */; };
+		ECCA49FC254F07AF000407CE /* SelectedAlphabetListViewController+CollectionViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49FB254F07AF000407CE /* SelectedAlphabetListViewController+CollectionViewDecorator.swift */; };
+		ECCA49FE254F0988000407CE /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA49FD254F0988000407CE /* AlphabetCollectionViewCell.swift */; };
+		ECCA4A01254F0A33000407CE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A00254F0A33000407CE /* UIView+Extension.swift */; };
+		ECCA4A05254F0EBF000407CE /* App+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A04254F0EBF000407CE /* App+UI.swift */; };
+		ECCA4A07254F0EC5000407CE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A06254F0EC5000407CE /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +38,6 @@
 		ECCA49D0254EFEC6000407CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCA49D2254EFEC6000407CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECCA49D8254F0009000407CE /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
-		ECCA49DC254F002A000407CE /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		ECCA49DF254F0042000407CE /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		ECCA49E2254F0054000407CE /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
 		ECCA49E8254F0104000407CE /* AlphabetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetListViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +46,12 @@
 		ECCA49F1254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlphabetListViewController+TableViewDecorator.swift"; sourceTree = "<group>"; };
 		ECCA49F3254F03B7000407CE /* TableViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDecorator.swift; sourceTree = "<group>"; };
 		ECCA49F5254F03D3000407CE /* CollectionViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDecorator.swift; sourceTree = "<group>"; };
+		ECCA49F9254F06A8000407CE /* SelectedAlphabetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAlphabetListTableViewCell.swift; sourceTree = "<group>"; };
+		ECCA49FB254F07AF000407CE /* SelectedAlphabetListViewController+CollectionViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedAlphabetListViewController+CollectionViewDecorator.swift"; sourceTree = "<group>"; };
+		ECCA49FD254F0988000407CE /* AlphabetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECCA4A00254F0A33000407CE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		ECCA4A04254F0EBF000407CE /* App+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+UI.swift"; sourceTree = "<group>"; };
+		ECCA4A06254F0EC5000407CE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 				ECCA49D8254F0009000407CE /* AppDelegate+Setup.swift */,
 				ECCA49DA254F0017000407CE /* Core */,
 				ECCA49E4254F00DE000407CE /* Modules */,
+				ECCA4A08254F0F04000407CE /* Utilities */,
 				ECCA49ED254F0222000407CE /* Common */,
 				ECCA49EC254F0112000407CE /* Resources */,
 				ECCA49D2254EFEC6000407CE /* Info.plist */,
@@ -117,7 +128,8 @@
 		ECCA49DB254F0021000407CE /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				ECCA49DC254F002A000407CE /* Application.swift */,
+				ECCA4A06254F0EC5000407CE /* App.swift */,
+				ECCA4A04254F0EBF000407CE /* App+UI.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -142,6 +154,7 @@
 		ECCA49E7254F00F4000407CE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				ECCA49F8254F066C000407CE /* Cells */,
 				ECCA49E8254F0104000407CE /* AlphabetListViewController.swift */,
 				ECCA49EA254F010B000407CE /* AlphabetListViewModel.swift */,
 				ECCA49F1254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift */,
@@ -162,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCA49EE254F022B000407CE /* Base */,
+				ECCA49FF254F0A1F000407CE /* Extension */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -174,6 +188,31 @@
 				ECCA49F5254F03D3000407CE /* CollectionViewDecorator.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		ECCA49F8254F066C000407CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA49F9254F06A8000407CE /* SelectedAlphabetListTableViewCell.swift */,
+				ECCA49FB254F07AF000407CE /* SelectedAlphabetListViewController+CollectionViewDecorator.swift */,
+				ECCA49FD254F0988000407CE /* AlphabetCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ECCA49FF254F0A1F000407CE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA4A00254F0A33000407CE /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ECCA4A08254F0F04000407CE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,16 +330,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCA49E3254F0054000407CE /* SceneType.swift in Sources */,
-				ECCA49DD254F002A000407CE /* Application.swift in Sources */,
+				ECCA4A05254F0EBF000407CE /* App+UI.swift in Sources */,
+				ECCA49FE254F0988000407CE /* AlphabetCollectionViewCell.swift in Sources */,
+				ECCA4A01254F0A33000407CE /* UIView+Extension.swift in Sources */,
 				ECCA49EB254F010B000407CE /* AlphabetListViewModel.swift in Sources */,
 				ECCA49E9254F0104000407CE /* AlphabetListViewController.swift in Sources */,
+				ECCA4A07254F0EC5000407CE /* App.swift in Sources */,
 				ECCA49E0254F0042000407CE /* Navigator.swift in Sources */,
 				ECCA49F0254F023E000407CE /* BaseViewController.swift in Sources */,
+				ECCA49FC254F07AF000407CE /* SelectedAlphabetListViewController+CollectionViewDecorator.swift in Sources */,
 				ECCA49C5254EFEC3000407CE /* AppDelegate.swift in Sources */,
 				ECCA49F4254F03B7000407CE /* TableViewDecorator.swift in Sources */,
 				ECCA49D9254F0009000407CE /* AppDelegate+Setup.swift in Sources */,
 				ECCA49F2254F0379000407CE /* AlphabetListViewController+TableViewDecorator.swift in Sources */,
 				ECCA49F6254F03D3000407CE /* CollectionViewDecorator.swift in Sources */,
+				ECCA49FA254F06A8000407CE /* SelectedAlphabetListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

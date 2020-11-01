@@ -1,15 +1,15 @@
 //
-//  Application.swift
+//  App.swift
 //  Q_CodingTest
 //
-//  Created by Buzz.Kim on 2020/11/01.
+//  Created by Buzz.Kim on 2020/11/02.
 //  Copyright © 2020 jinnify. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-final class Application: NSObject {
+final class App: NSObject {
 
   var window: UIWindow?
   var navigator: Navigator
@@ -27,8 +27,8 @@ final class Application: NSObject {
   }
 }
 
-extension Application {
+extension App {
   
   // singleton
-  static let shared = Application()
+  static let shared = App()
 }

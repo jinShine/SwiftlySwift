@@ -42,6 +42,10 @@ class AlphabetListViewModel: AlphabetListViewModelAdaptor {
   
   func numberOfRowsInSection(section: Int) -> Int {
     switch SectionType(rawValue: section) {
+    case .selectedAlphabetList:
+      return 1
+    case .alphabetList:
+      return 1
     default:
       return 1
     }

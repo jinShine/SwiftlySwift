@@ -15,7 +15,7 @@ extension AppDelegate {
              launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
     
     let window = UIWindow(frame: UIScreen.main.bounds)
-    Application.shared.presentInitialScreen(in: window)
+    App.shared.presentInitialScreen(in: window)
   }
     
   
