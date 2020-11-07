@@ -31,12 +31,15 @@ extension AlphabetListViewController: UITableViewDataSource {
 extension AlphabetListViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    
+    let cellHeight = (((view.frame.width - (App.basicLine * 2)) / UI.collectionViewColumn) * 2)
+    
     switch AlphabetListViewModel.SectionType(rawValue: indexPath.section) {
     case .selectedAlphabetList:
-      let height = ((view.bounds.width - (App.basicLine * 2)) / UI.collectionViewColumn) * 2
-      return height
+      return cellHeight + UI.footerViewHeight
     case .alphabetList:
-      return 100
+      let cellHeight = view.frame.height - (cellHeight + (UI.headerViewHeight * 2))
+      return cellHeight
     default:
       return .zero
     }
@@ -56,12 +59,13 @@ extension AlphabetListViewController: TableViewDecorator {
 
       return cell
     case .alphabetList:
-//      guard let cell = tableView.dequeueReusableCell(
-//        withIdentifier: SelectedAlphabetListTableViewCell.reuseIdentifier, for: indexPath
-//        ) as? SelectedAlphabetListTableViewCell else { return UITableViewCell() }
-//
-//      return cell
-      return UITableViewCell()
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: AlphabetListTableViewCell.reuseIdentifier, for: indexPath
+        ) as? AlphabetListTableViewCell else { return UITableViewCell() }
+      
+      cell.configure(with: viewModel.alphabets)
+      
+      return cell
     default:
       return UITableViewCell()
     }

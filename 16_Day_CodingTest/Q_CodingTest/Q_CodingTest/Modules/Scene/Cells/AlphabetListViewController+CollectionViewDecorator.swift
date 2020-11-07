@@ -1,5 +1,5 @@
 //
-//  SelectedAlphabetListViewController+CollectionViewDecorator.swift
+//  AlphabetListViewController+CollectionViewDecorator.swift
 //  Q_CodingTest
 //
 //  Created by Buzz.Kim on 2020/11/02.
@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - CollectionView data source
 
-extension SelectedAlphabetListTableViewCell: UICollectionViewDataSource {
+extension AlphabetListTableViewCell: UICollectionViewDataSource {
   
   public func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1
@@ -18,7 +18,7 @@ extension SelectedAlphabetListTableViewCell: UICollectionViewDataSource {
   
   public func collectionView(_ collectionView: UICollectionView,
                              numberOfItemsInSection section: Int) -> Int {
-    return 6
+    return alphabets.count
   }
 
   public func collectionView(_ collectionView: UICollectionView,
@@ -30,14 +30,14 @@ extension SelectedAlphabetListTableViewCell: UICollectionViewDataSource {
                       viewForSupplementaryElementOfKind kind: String,
                       at indexPath: IndexPath) -> UICollectionReusableView {
     switch kind {
-    case UICollectionView.elementKindSectionFooter:
-      let footerView = collectionView.dequeueReusableSupplementaryView(
+    case UICollectionView.elementKindSectionHeader:
+      let headerView = collectionView.dequeueReusableSupplementaryView(
         ofKind: kind,
         withReuseIdentifier: FooterViewCollectionViewCell.reuseIdentifier,
         for: indexPath
       )
       
-      return footerView
+      return headerView
     default:
       return UICollectionReusableView()
     }
@@ -46,7 +46,7 @@ extension SelectedAlphabetListTableViewCell: UICollectionViewDataSource {
 
 // MARK: - CollectionView delegate
 
-extension SelectedAlphabetListTableViewCell: UICollectionViewDelegate {
+extension AlphabetListTableViewCell: UICollectionViewDelegate {
 
   public func collectionView(_ collectionView: UICollectionView,
                              didSelectItemAt indexPath: IndexPath) {
@@ -59,7 +59,7 @@ extension SelectedAlphabetListTableViewCell: UICollectionViewDelegate {
   }
 }
 
-extension SelectedAlphabetListTableViewCell: UICollectionViewDelegateFlowLayout {
+extension AlphabetListTableViewCell: UICollectionViewDelegateFlowLayout {
   
   public func collectionView(_ collectionView: UICollectionView,
                              layout collectionViewLayout: UICollectionViewLayout,
@@ -89,7 +89,7 @@ extension SelectedAlphabetListTableViewCell: UICollectionViewDelegateFlowLayout 
   
   func collectionView(_ collectionView: UICollectionView,
                       layout collectionViewLayout: UICollectionViewLayout,
-                      referenceSizeForFooterInSection section: Int) -> CGSize {
+                      referenceSizeForHeaderInSection section: Int) -> CGSize {
     return CGSize(width: collectionView.frame.width, height: UI.footerViewHeight)
   }
   
@@ -97,7 +97,7 @@ extension SelectedAlphabetListTableViewCell: UICollectionViewDelegateFlowLayout 
 
 // MARK: - CollectionView decorator
 
-extension SelectedAlphabetListTableViewCell: UICollectionViewDataSourcePrefetching {
+extension AlphabetListTableViewCell: UICollectionViewDataSourcePrefetching {
   public func collectionView(_ collectionView: UICollectionView,
                              prefetchItemsAt indexPaths: [IndexPath]) {
     
@@ -111,7 +111,7 @@ extension SelectedAlphabetListTableViewCell: UICollectionViewDataSourcePrefetchi
 
 // MARK: - CollectionView decorator
 
-extension SelectedAlphabetListTableViewCell: CollectionViewDecorator {
+extension AlphabetListTableViewCell: CollectionViewDecorator {
 
   public func configureCell(collectionView: UICollectionView,
                             indexPath: IndexPath) -> UICollectionViewCell {
@@ -120,6 +120,9 @@ extension SelectedAlphabetListTableViewCell: CollectionViewDecorator {
       withReuseIdentifier: AlphabetCollectionViewCell.reuseIdentifier, for: indexPath
       ) as? AlphabetCollectionViewCell else { return UICollectionViewCell() }
     
+    cell.configure(with: alphabets[indexPath.item])
+    
     return cell
   }
 }
+

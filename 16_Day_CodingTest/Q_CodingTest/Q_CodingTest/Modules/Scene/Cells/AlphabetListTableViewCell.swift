@@ -1,5 +1,5 @@
 //
-//  SelectedAlphabetListTableViewCell.swift
+//  AlphabetListTableViewCell.swift
 //  Q_CodingTest
 //
 //  Created by Buzz.Kim on 2020/11/02.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SelectedAlphabetListTableViewCell: UITableViewCell {
+class AlphabetListTableViewCell: UITableViewCell {
   
   // MARK: - UI
   
@@ -40,12 +40,18 @@ class SelectedAlphabetListTableViewCell: UITableViewCell {
     
     collectionView.register(
       FooterViewCollectionViewCell.self,
-      forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
+      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
       withReuseIdentifier: FooterViewCollectionViewCell.reuseIdentifier
     )
     
     return collectionView
   }()
+  
+  // MARK: - Properties
+  
+  var alphabets: [String] = [] {
+    didSet { reloadData() }
+  }
   
   //MARK: - Initialize
   
@@ -82,8 +88,14 @@ class SelectedAlphabetListTableViewCell: UITableViewCell {
     }
   }
   
-  func configure(with item: String) {
-    
+  private func reloadData() {
+    DispatchQueue.main.async {
+      self.collectionView.reloadData()
+    }
+  }
+  
+  func configure(with items: [String]) {
+    self.alphabets = items
   }
   
 }

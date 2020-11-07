@@ -26,6 +26,9 @@
 		ECCA4A01254F0A33000407CE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A00254F0A33000407CE /* UIView+Extension.swift */; };
 		ECCA4A05254F0EBF000407CE /* App+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A04254F0EBF000407CE /* App+UI.swift */; };
 		ECCA4A07254F0EC5000407CE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A06254F0EC5000407CE /* App.swift */; };
+		ECCA4A0F254F1261000407CE /* FooterViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A0E254F1261000407CE /* FooterViewCollectionViewCell.swift */; };
+		ECCA4A11254F1891000407CE /* AlphabetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A10254F1891000407CE /* AlphabetListTableViewCell.swift */; };
+		ECCA4A13254F18AB000407CE /* AlphabetListViewController+CollectionViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A12254F18AB000407CE /* AlphabetListViewController+CollectionViewDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		ECCA4A00254F0A33000407CE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		ECCA4A04254F0EBF000407CE /* App+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+UI.swift"; sourceTree = "<group>"; };
 		ECCA4A06254F0EC5000407CE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		ECCA4A0E254F1261000407CE /* FooterViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECCA4A10254F1891000407CE /* AlphabetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetListTableViewCell.swift; sourceTree = "<group>"; };
+		ECCA4A12254F18AB000407CE /* AlphabetListViewController+CollectionViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlphabetListViewController+CollectionViewDecorator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,9 @@
 				ECCA49F9254F06A8000407CE /* SelectedAlphabetListTableViewCell.swift */,
 				ECCA49FB254F07AF000407CE /* SelectedAlphabetListViewController+CollectionViewDecorator.swift */,
 				ECCA49FD254F0988000407CE /* AlphabetCollectionViewCell.swift */,
+				ECCA4A0E254F1261000407CE /* FooterViewCollectionViewCell.swift */,
+				ECCA4A10254F1891000407CE /* AlphabetListTableViewCell.swift */,
+				ECCA4A12254F18AB000407CE /* AlphabetListViewController+CollectionViewDecorator.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -329,10 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCA4A11254F1891000407CE /* AlphabetListTableViewCell.swift in Sources */,
 				ECCA49E3254F0054000407CE /* SceneType.swift in Sources */,
 				ECCA4A05254F0EBF000407CE /* App+UI.swift in Sources */,
+				ECCA4A0F254F1261000407CE /* FooterViewCollectionViewCell.swift in Sources */,
 				ECCA49FE254F0988000407CE /* AlphabetCollectionViewCell.swift in Sources */,
 				ECCA4A01254F0A33000407CE /* UIView+Extension.swift in Sources */,
+				ECCA4A13254F18AB000407CE /* AlphabetListViewController+CollectionViewDecorator.swift in Sources */,
 				ECCA49EB254F010B000407CE /* AlphabetListViewModel.swift in Sources */,
 				ECCA49E9254F0104000407CE /* AlphabetListViewController.swift in Sources */,
 				ECCA4A07254F0EC5000407CE /* App.swift in Sources */,

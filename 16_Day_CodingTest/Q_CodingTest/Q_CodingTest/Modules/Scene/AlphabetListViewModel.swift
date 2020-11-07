@@ -9,6 +9,7 @@
 import UIKit
 
 protocol AlphabetListViewModelAdaptor {
+  var alphabets: [String] { get }
   
   func numberOfSections() -> Int
   func numberOfRowsInSection(section: Int) -> Int
@@ -25,6 +26,8 @@ class AlphabetListViewModel: AlphabetListViewModelAdaptor {
   }
   
   //MARK: - Properties
+  
+  let alphabets = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
   
   //MARK: - Init
   

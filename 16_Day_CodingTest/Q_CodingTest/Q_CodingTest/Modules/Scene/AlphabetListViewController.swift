@@ -19,6 +19,8 @@ class AlphabetListViewController: BaseViewController {
   
   struct UI {
     static let collectionViewColumn: CGFloat = 3
+    static let footerViewHeight: CGFloat = 44
+    static let headerViewHeight: CGFloat = 44
   }
   
   //MARK: - UI Properties
@@ -26,15 +28,18 @@ class AlphabetListViewController: BaseViewController {
   lazy var tableView: UITableView = {
     let tableView = UITableView()
     tableView.rowHeight = UITableView.automaticDimension
-    tableView.estimatedRowHeight = 80
+    tableView.estimatedRowHeight = 300
     tableView.dataSource = self
     tableView.delegate = self
     tableView.separatorStyle = .none
     tableView.showsVerticalScrollIndicator = false
-    
     tableView.register(
       SelectedAlphabetListTableViewCell.self,
       forCellReuseIdentifier: SelectedAlphabetListTableViewCell.reuseIdentifier
+    )
+    tableView.register(
+      AlphabetListTableViewCell.self,
+      forCellReuseIdentifier: AlphabetListTableViewCell.reuseIdentifier
     )
 
     return tableView
@@ -79,9 +84,10 @@ class AlphabetListViewController: BaseViewController {
     super.setupConstraints()
     
     tableView.snp.makeConstraints {
-      $0.edges.equalToSuperview()
+      $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+      $0.leading.trailing.equalToSuperview()
+      $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
     }
-    
   }
   
   override func bind() {

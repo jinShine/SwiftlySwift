@@ -17,6 +17,12 @@ class AlphabetCollectionViewCell: UICollectionViewCell {
     }
   }
   
+  let titleLabel: UILabel = {
+    let label = UILabel()
+    label.textAlignment = .center
+    return label
+  }()
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupUI()
@@ -35,11 +41,18 @@ class AlphabetCollectionViewCell: UICollectionViewCell {
   private func setupUI() {
     contentView.layer.borderColor = UIColor.black.cgColor
     contentView.layer.borderWidth = 0.5
-    backgroundColor = .red
+    
+    [titleLabel].forEach {
+      self.contentView.addSubview($0)
+    }
+    
+    titleLabel.snp.makeConstraints {
+      $0.edges.equalToSuperview()
+    }
   }
   
   func configure(with item: String) {
-   
+    self.titleLabel.text = item
   }
 
 }
