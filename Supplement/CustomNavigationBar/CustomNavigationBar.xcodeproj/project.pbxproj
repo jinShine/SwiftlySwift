@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC85A7772559906E00A40CD1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC85A7762559906E00A40CD1 /* BaseNavigationController.swift */; };
 		ECCA4A4C2557101A000407CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A4B2557101A000407CE /* AppDelegate.swift */; };
 		ECCA4A4E2557101A000407CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A4D2557101A000407CE /* SceneDelegate.swift */; };
 		ECCA4A502557101A000407CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A4F2557101A000407CE /* ViewController.swift */; };
 		ECCA4A532557101A000407CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCA4A512557101A000407CE /* Main.storyboard */; };
 		ECCA4A552557101C000407CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCA4A542557101C000407CE /* Assets.xcassets */; };
 		ECCA4A582557101C000407CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCA4A562557101C000407CE /* LaunchScreen.storyboard */; };
+		ECCA4A6025571335000407CE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4A5F25571335000407CE /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC85A7762559906E00A40CD1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		ECCA4A482557101A000407CE /* CustomNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCA4A4B2557101A000407CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCA4A4D2557101A000407CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		ECCA4A542557101C000407CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECCA4A572557101C000407CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCA4A592557101C000407CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCA4A5F25571335000407CE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				ECCA4A542557101C000407CE /* Assets.xcassets */,
 				ECCA4A562557101C000407CE /* LaunchScreen.storyboard */,
 				ECCA4A592557101C000407CE /* Info.plist */,
+				ECCA4A5F25571335000407CE /* SecondViewController.swift */,
+				EC85A7762559906E00A40CD1 /* BaseNavigationController.swift */,
 			);
 			path = CustomNavigationBar;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCA4A6025571335000407CE /* SecondViewController.swift in Sources */,
 				ECCA4A502557101A000407CE /* ViewController.swift in Sources */,
+				EC85A7772559906E00A40CD1 /* BaseNavigationController.swift in Sources */,
 				ECCA4A4C2557101A000407CE /* AppDelegate.swift in Sources */,
 				ECCA4A4E2557101A000407CE /* SceneDelegate.swift in Sources */,
 			);

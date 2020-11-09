@@ -14,7 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    let backButtonImage = UIImage(systemName: "arrow.left", withConfiguration: UIImage.SymbolConfiguration(weight: .bold))
+    
+    UINavigationBar.appearance().backIndicatorImage = backButtonImage
+    UINavigationBar.appearance().backIndicatorTransitionMaskImage = backButtonImage
+    
+    // back button title 숨기는 방법
+    UIBarButtonItem.appearance().setTitleTextAttributes(
+      [.foregroundColor: UIColor.clear],
+      for: .normal
+    )
+    UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000, vertical: 0), for:UIBarMetrics.default)
+
+    // 전체적으로 statusBar를 바꾸는 방법
+    // info.plist에 View controller-based status bar appearance NO로 설정 필요
+    // UIApplication.shared.statusBarStyle = .lightContent
+    
     return true
   }
 
