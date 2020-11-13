@@ -13,6 +13,9 @@
 		EC85A7CD255D039500A40CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC85A7CB255D039500A40CD1 /* Main.storyboard */; };
 		EC85A7CF255D039600A40CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC85A7CE255D039600A40CD1 /* Assets.xcassets */; };
 		EC85A7D2255D039600A40CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC85A7D0255D039600A40CD1 /* LaunchScreen.storyboard */; };
+		EC85A81E255E4A4B00A40CD1 /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC85A81D255E4A4B00A40CD1 /* Walkthrough.storyboard */; };
+		EC85A821255E4C1C00A40CD1 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC85A820255E4C1C00A40CD1 /* WalkthroughViewController.swift */; };
+		EC85A829255E4E6600A40CD1 /* WalkthroughContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC85A828255E4E6600A40CD1 /* WalkthroughContentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EC85A7CE255D039600A40CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC85A7D1255D039600A40CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC85A7D3255D039600A40CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC85A81D255E4A4B00A40CD1 /* Walkthrough.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Walkthrough.storyboard; sourceTree = "<group>"; };
+		EC85A820255E4C1C00A40CD1 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		EC85A828255E4E6600A40CD1 /* WalkthroughContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		EC85A7C4255D039500A40CD1 /* WalkthroughTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				EC85A81B255E4A0000A40CD1 /* Storyboard */,
 				EC85A7C5255D039500A40CD1 /* AppDelegate.swift */,
 				EC85A7C7255D039500A40CD1 /* SceneDelegate.swift */,
 				EC85A7C9255D039500A40CD1 /* ViewController.swift */,
-				EC85A7CB255D039500A40CD1 /* Main.storyboard */,
+				EC85A820255E4C1C00A40CD1 /* WalkthroughViewController.swift */,
+				EC85A828255E4E6600A40CD1 /* WalkthroughContentCell.swift */,
 				EC85A7CE255D039600A40CD1 /* Assets.xcassets */,
 				EC85A7D0255D039600A40CD1 /* LaunchScreen.storyboard */,
 				EC85A7D3255D039600A40CD1 /* Info.plist */,
 			);
 			path = WalkthroughTutorial;
+			sourceTree = "<group>";
+		};
+		EC85A81B255E4A0000A40CD1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EC85A7CB255D039500A40CD1 /* Main.storyboard */,
+				EC85A81D255E4A4B00A40CD1 /* Walkthrough.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC85A7D2255D039600A40CD1 /* LaunchScreen.storyboard in Resources */,
+				EC85A81E255E4A4B00A40CD1 /* Walkthrough.storyboard in Resources */,
 				EC85A7CF255D039600A40CD1 /* Assets.xcassets in Resources */,
 				EC85A7CD255D039500A40CD1 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC85A7CA255D039500A40CD1 /* ViewController.swift in Sources */,
+				EC85A821255E4C1C00A40CD1 /* WalkthroughViewController.swift in Sources */,
+				EC85A829255E4E6600A40CD1 /* WalkthroughContentCell.swift in Sources */,
 				EC85A7C6255D039500A40CD1 /* AppDelegate.swift in Sources */,
 				EC85A7C8255D039500A40CD1 /* SceneDelegate.swift in Sources */,
 			);
